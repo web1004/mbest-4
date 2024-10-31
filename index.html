@@ -1,2509 +1,996 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>함지안 Ham jian • UX/UI Design and Web Publisher</title>
+  <link rel="icon" href="image/logo_icon.png">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link rel="stylesheet" href="css/index.css?ver=1">
-  <link rel="stylesheet" href="css/jquery.fullpage.css">
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-  <script src="js/jquery.fullpage.js?ver=1"></script>
-  <script src="js/index.js?ver=1"></script>
-  <script src="js/index2.js?ver=1"></script>
-
-  <title>LEEJIHOON</title>
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <div class="changeColor"></div>
-  <div id="fullpage">
-    <div class="section" id="intro">
-      <div class="IntroCircle">
-        <h3 class= introMainText>이지훈의 포트폴리오</h3>
-        <p class="introSubText">Hi! Im' Web Publisher & UI/UX Designer!</p>
-      </div>
-      <ul class="workIndex">
-        <li>
-          <h3>4</h3>
-          <p>Web Publishing</p>
-        </li>
-        <li>
-          <h3>8</h3>
-          <p>UI/UX Design</p>
-        </li>
-        <li>
-          <h3>10</h3>
-          <p>2D Graphic Design</p>
-        </li>
-        <li>
-          <h3>3</h3>
-          <p>Web Planning</p>
-        </li>
-      </ul>
-      <div class="arlet">
-        <h3>-NOTICE-</h3>
-        <p>-본 사이트는 <span class="bling">1920 X 1080 해상도</span>를 기준으로 제작했습니다.</p>
-        <P>-사이트 확대도를 <span class=bling>100%에 두시고</span> 브라우저 <span class=bling>사이즈를 최대로</span> 해주시길 바랍니다!</P>
-        <p>-<span class=bling>풀페이지 스크롤</span> 적용 사이트이므로 <span class="bling">스크롤을 살짝</span> 내려주세요!</p>
-        <span class="nail"></span>
-        <span class="nail"></span>
-        <span class="nail"></span>
-        <span class="nail"></span>
-      </div>
-      <p class="you">넌, 디자인 할 때 <br> 제일 멋져:&#41;</p>
-      <span class="material-symbols-outlined scrollMouse">mouse</span>
-    </div>
-    <div class="section" id="profile">
-      <h2 class="myprofileText">MY <span>Profile</span></h2>
-      <div class="inner flexInner">
-        <div class="profileLeft">
-          <div class=profileLeftGlass>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <div class="profilePic">
-            <img src="img/neonJH.png" alt="" id="myProfilePic">
-            </div>
-            <div class="who_I_Am">
-              <h4>My Info</h4>
-              <div class="myInfo">
-                <p>Name: 이지훈</p>
-                <p>Birth: 2000.04.23 (만 23세)</p>
-                <p>MBTI: ISTP</p>
-                <p>Address: 서울 중랑구</p>
-                <p>hobby: 야구</p>
-              </div>
-              <div class="contect">
-                <p>e-mail: ejh118@naver.com</p>
-                <p>Phone: 010-3930-4150</p>
-              </div>
-            </div>
-<!--             <div class="resume">
-              <a href="download/이지훈_입사지원서.hwp" download>이력서 보기</a>
-            </div> -->
-          </div>
-        </div>
-        <div class="profileRight">
-            <div class="profileRightGlass">
-              <span class="profileRightGlassNail"></span>
-              <span class="profileRightGlassNail"></span>
-              <span class="profileRightGlassNail"></span>
-              <span class="profileRightGlassNail"></span>
-              <div class="Record">
-                <div class="Record_Horizen">
-                  <ul class="edu">
-                    <li><h4 class="RecordTitle">교육사항</h4></li>
-                    <li>
-                      <p>
-                        [이젠아카데미] 모바일 UI/UX 웹&앱디자인<br>(웹퍼블리셔) 스마트 국비과정 수료 (700H)
-                      </p>
-                      <p class="date">(2022.12.05 ~ 2023.05.26 700H)</p>
-                    </li>
-                  </ul>
-                  <ul class="edu">
-                    <li><h4 class="RecordTitle">자격사항</h4></li>
-                    <li>
-                      <p>2종보통 운전면허증</p>
-                      <p class="date">(2019.01)</p>
-                      <p>컴퓨터응용밀링기능사</p>
-                      <p class="date">(2018.08)</p>
-                    </li>
-                  </ul>
-                  <ul class="edu">
-                    <li><h4 class="RecordTitle">경력사항</h4></li>
-                    <li>
-                      <p>B마트(전산 및 물류업무)</p>
-                      <p class="date">(2021.04 ~ 2021.10)</p>
-                      <p>한즈모트롤(기계조립)</p>
-                      <p class="date">(2022.01 ~ 2021.05)</p>
-                      <p>두잉피플플러스(신세계 강남점-주차/고객안내)</p>
-                      <p class="date">(2022.06 ~ 2021.09)</p>
-                      <p>스타벅스(바리스타)</p>
-                      <p class="date">(2022.09 ~ 2021.10)</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="Record_vertical">
-                  <ul class="army">
-                    <li><h4 class="RecordTitle">병역사항</h4></li>
-                    <li>
-                      <p>육군 화력여단 병장 만기전역</p>
-                      <p class="date">(2019.09.23 ~ 2021.04.12)</p>
-                    </li>
-                  </ul>
-                  <ul class="aboutMe">
-                    <li><h4 class="RecordTitle">I promise</h4></li>
-                    <li>
-                      <p>
-                        돈받고 일하는 순간부터 프로라고 합니다. 비록 신입이지만 프로라는 생각으로
-                        어떤 일이든 처리하겠습니다.
-                      </p>
-                    </li>
-                  </ul>
-    
-                  <h4 class="RecordTitle titleSkill">Skills</h4>
+
+  <p id="txt1">0</p>
   
-                  <ul class="skills">
-                    <li data-alt="skillsInfo1">
-                      <img src="img/skill_html.png" alt="">
-                      <p class="percent">95%</p>
-                    </li>
-                    <li data-alt="skillsInfo2">
-                      <img src="img/skill_css.png" alt="">
-                      <p class="percent">95%</p>
-                    </li>
-                    <li data-alt="skillsInfo3">
-                      <img src="img/skill_js.png" alt="">
-                      <p class="percent">70%</p>
-                    </li>
-                    <li data-alt="skillsInfo4">
-                      <img src="img/skill_jq.png" alt="">
-                      <p class="percent">80%</p>
-                    </li>
-                    <li data-alt="skillsInfo5">
-                      <img src="img/skill_ps.png" alt="">
-                      <p class="percent">85%</p>
-                    </li>
-                    <li data-alt="skillsInfo6">
-                      <img src="img/skill_ai.png" alt="">
-                      <p class="percent">75%</p>
-                    </li>
-                    <li class="insuffSkill" data-alt="skillsInfo7">
-                      <div><img src="img/skill_figma.png" alt=""></div>
-                      <div></div>
-                      <div></div>
-                      <div><img src="img/skill_scss.png" alt=""></div>
-                      <p class="percent">그외</p>
-                    </li>
-                  </ul>
-                  <p class="toolTip" id="skillsInfo1">
-                    HTML 기본 구조 이해도가 있으며, block 요소로는 header, section, footer 태그, inline요소로는 span, i 태그 등을 이용하여 HTML5구조 작성이 가능합니다.
-                  </p>
-                  <p class="toolTip" id="skillsInfo2">
-                    CSS3를 사용하여 디자인 시안을 토대로한 레이아웃 구현이 가능합니다. 그리고 transition을 이용한 세심한 hover 효과를 구현할 수 있으며
-                    animation효과를 이용한 요소 형상 변형과 동적 효과를 구현할 수 있습니다. 
-                  </p>
-                  <p class="toolTip" id="skillsInfo3">
-                    JavaScript 기본 문법 이해로 기본적인 효과 구현이 가능합니다.
-                  </p>
-                  <p class="toolTip" id="skillsInfo4">
-                    show, hide 메서드를 이용하여 팝업창 제작이 가능합니다. 스크롤 수치에 의한 animation효과를 이용하여 동적인 효과를 줄 수 있으며, 탭메뉴와 이미지 갤러리를 구현할 수 있습니다.
-                  </p>
-                  <p class="toolTip" id="skillsInfo5">
-                    Photoshop에 기본 내장된 기능들을 적극 활용합니다. 펜툴을 이용한 세밀한 이미지 추출을 할 수 있으며, 이미지 색감, 패턴 등을 보정한 상세 페이지 제작이 가능합니다.
-                  </p>
-                  <p class="toolTip" id="skillsInfo6">
-                    vector형식 기반의 플랫 디자인, 머터리얼 디자인 아이콘 제작이 가능합니다.
-                    펜툴을 이용한 사실적인 묘사가 가능합니다.
-                  </p>
-                  <p class="toolTip" id="skillsInfo7">
-                    피그마를 사용한 웹 UI/UX디자인과 아이콘 디자인이 가능합니다. <br>
-                    SCSS파일을 컴파일하여 CSS3의 코드를 효과적으로 줄일 수 있습니다.
-                  </p>
-                </div>
-              </div>
-              <div class="followLine">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="toolTipSpaceBox"></div>
-            </div>
+  <div class="wrap">
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#">HAM JIAN <br>PORTFOLIO</a>
         </div>
-      </div>
-    </div>
-    <div class="section" id="works">
-      <div class="mockBack1">
-        <p class="mockUpBackBtn">X</p>
-        <div class="mockup">
-          <div class="mobile">
-            <div class="display">
-              <div class="camera">
-                <span></span>
-                <span></span>
-              </div>
-              <iframe src="http://none.com" class="mobileIframe"></iframe>
-            </div>
-            <div class="power">
-              <span></span>
-            </div>
-            <div class="volume">
-              <span></span>
-              <span></span>
-            </div>
-            <div class="ready">
-              <img src="img/logo.png" alt="">
-              <p>Mobile,Tablet은 준비중입니다 :&#41;</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mockBack2">
-        <p class="mockUpBackBtn">X</p>
-        <div class="mockup2">
-          <div class="tablet">
-            <div class="display2">
-              <div class="camera2">
-                <span></span>
-                <span></span>
-              </div>
-              <iframe src="http://none.com" class="tabletIframe"></iframe>
-            </div>
-            <div class="power2">
-              <span></span>
-            </div>
-            <div class="volume2">
-              <span></span>
-              <span></span>
-            </div>
-            <div class="readyTablet">
-              <img src="img/logo.png" alt="">
-              <p>Mobile,Tablet은 준비중입니다 :&#41;</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="inner">
-        <div class="view">
-          <ul class="viewBox">
-            <li>
-              <div class="viewLeftBox">
-                <h2 class="workNum">#0<span>1</span></h2>
-                <div class="workTextBox">
-                  <p class="webP">WEB Publishing</p>
-                  <h3 class="workTitle">멜론뮤직어워드<br>2022(MMA)</h3>
-                  <p class="workDate">제작기간: 2022.03.18 ~ 2022.03.23</p>
-                  <div class="viewMoreBox">
-                    <div class="moreBtn siteBtn"><a href="http://ejh118.dothome.co.kr/" target="_blank">Go To Site</a></div>
-                    <div class="moreBtn viewBtn">View More</div>
-                  </div>
-                  <div class="contribute">
-                    <p>작업 기여도: 개인작업 100%</p>
-                  </div>
-                </div>
-              </div>
-              <div class="viewPop">
-                <div class="popMouseBox">
-                  <p class="exit">X</p>
-                </div>
-                <div class="viewmorePage">
-                  <img src="img/Frame15.png" alt="">
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="viewLeftBox">
-                <h2 class="workNum">#0<span>2</span></h2>
-                <div class="workTextBox">
-                  <p class="webP">WEB Publishing</p>
-                  <h3 class="workTitle">카셰어링<br>그린카</h3>
-                  <p class="workDate">제작기간: 2022.04.19 ~ 2022.04.25</p>
-                  <div class="viewMoreBox">
-                    <div class="moreBtn siteBtn greencarBtn">Go To Site</div>
-                    <div class="moreBtn viewBtn">View More</div>
-                  </div>
-                  <div class="contribute">작업 기여도: 개인작업 100%</div>
-                </div>
-              </div>
-              <div class="viewPop">
-                <div class="popMouseBox">
-                  <p class="exit">X</p>
-                </div>
-                <div class="viewmorePage">
-                  <img src="img/Frame16.png" alt="">
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="viewLeftBox">
-                <h2 class="workNum">#0<span>3</span></h2>
-                <div class="workTextBox">
-                  <p class="webP">WEB Publishing</p>
-                  <h3 class="workTitle">WebTrend<br>2023</h3>
-                  <p class="workDate">제작기간: 2022.04.23 ~ 2022.04.25</p>
-                  <div class="viewMoreBox">
-                    <div class="moreBtn siteBtn"><a href="http://jme07013.dothome.co.kr/" target="_blank">Go To Site</a></div>
-                    <div class="moreBtn viewBtn">View More</div>
-                  </div>
-                  <div class="contribute">작업 기여도: 개인작업 100%</div>
-                </div>
-              </div>
-              <div class="viewPop">
-                <div class="popMouseBox">
-                  <p class="exit">X</p>
-                </div>
-                <div class="viewmorePage">
-                  <img src="img/Frame17.png" alt="">
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="viewLeftBox">
-                <h2 class="workNum">#0<span>4</span></h2>
-                <div class="workTextBox">
-                  <p class="webP">WEB Publishing</p>
-                  <h3 class="workTitle">HYBE</h3>
-                  <p class="workDate">제작기간: 2022.02.13 ~ 2022.03.20</p>
-                  <div class="viewMoreBox">
-                    <div class="moreBtn siteBtn"><a href="https://ejh118.github.io/web_first-onepage/" target="_blank">Go To Site</a></div>
-                    <div class="moreBtn viewBtn">View More</div>
-                  </div>
-                  <div class="contribute">작업 기여도: 개인작업 100%</div>
-                </div>
-              </div>
-              <div class="viewPop">
-                <div class="popMouseBox">
-                  <p class="exit">X</p>
-                </div>
-                <div class="viewmorePage">
-                  <img src="img/Frame18.png" alt="">
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <span class="material-symbols-outlined L_arrow arrows">chevron_left</span>
-        <span class="material-symbols-outlined R_arrow arrows">chevron_right</span>
+        <ul class="gnb">
+          <li class="active"><a href="#publishing">
+            <span></span>
+            <p>(01) <br>Web Publishing</p>
+          </a></li>
+          <li><a href="#mobile">
+            <span></span>
+            <p>(02) <br>Mobile Web</p>
+          </a></li>
+          <li><a href="#design">
+            <span></span>
+            <p>(03) <br>Web Design</p>
+          </a></li>
+        </ul>
+      </nav>
+    </header>
 
-      </div>
-      <p class="decoText">WEB Publishing</p>
-      <div class="bottombar">
-        <div class="bottombarIN">
-          <ul class="langRate">
-            <li><img src="img/skill_html.png" alt=""><p class="htmlPer">12.9%</p></li>
-            <li><img src="img/skill_css.png" alt=""><p class="cssPer">9.1%</p></li>
-            <li><img src="img/skill_js.png" alt=""><p class="jsPer">78.0%</p></li>
-          </ul>
-          <p class="langText">Languages <br> 사용된 언어의 비율입니다.</p>
-          <p class="webStandad">웹 표준 준수 OK!</p>
-          <p class="deviceText">Devices <br> 활성화된 디바이스를 클릭하면 이동합니다.</p>
-          <ul class="devices">
-            <li><span class="material-symbols-outlined computer active V_com"><a href="http://ejh118.dothome.co.kr/" target="_blank">computer</a></span></li>
-            <li><span class="material-symbols-outlined tablet V_Tablet">tablet</span></li>
-            <li><span class="material-symbols-outlined phone V_Phone">phone_iphone</span></li>
-          </ul>
+    <!-- COVER================================================== -->
+    <section>
+      <div id="cover">
+        <div class="cover_contents">
+          <div class="cover_title">
+            <p>DESIGN & PUBLISH<br>PORTFOLIO</p>
+            <span>:FRAGRANCE</span>
+          </div>
+          <div class="cover_center">
+            <div class="cover_left">
+              <ul class="cover_note">
+                <li><b>(01)TOP NOTE</b>: Web Publishing</li>
+                <li><b>(02)MIDDLE NOTE</b>: Mobile Web</li>
+                <li><b>(03)BASE NOTE</b>: Web Design</li>
+              </ul>
+              <p>&copy;2023. Ham Jian All Rights Reserved.</p>
+            </div>
+            <div class="cover_right">
+              <div>
+                <ul class="cover_name">
+                  <li>Ham Jian</li>
+                  <li>(+82) 10 5657 6085</li>
+                  <li>sujung6085@naver.com</li>
+                </ul>
+                <ul class="cover_info">
+                  <li>Info</li>
+                  <li>20 projects</li>
+                  <li>This portfolio is optimized for Chrome browsers and 1920x1080 (100%) resolution.</li>
+                  <li>This work is a non-commercial personal project.</li>
+                </ul>
+              </div>
+              <p>SELECTED WORK<span class="material-symbols-outlined">arrow_downward</span></p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="section" id="twoD_Design">
 
-      <div class="twoD_DesignInner">
-        <div class="designSelectBtn">
-          <div class="uiuxdesignSelectBtn">UI/UX Design</div>
-          <div class="twoDSelectBtn">2D Graphic Design</div>
-        </div>
-        <div class="designTitleBox">
-          <div class="designTitle">
-            <h3>UI/UX Design</h3>
-            <p>감상하고 싶은 작업물을 클릭해주세요</p>
-            <p class="designTitle_info">
-              포토샵,일러스트레이터,피그마를 이용한 UI/UX 디자인입니다.
-              모든 작업물은 오로지 개인 작업물로만 이루어져있습니다.
-            </p>
+      <!-- INFOMATION=============================================== -->
+      <div id="infomation">
+        <div class="info_contents">
+          <div class="info_title">
+            <h1>Infomation</h1>
+          </div>
+          <div class="info_text">
+            <div class="info_concept">
+              <div class="info_concept_text">
+                <h2>Concept</h2>
+                <p>Fragrance: 1. 향기 2. 향</p>
+                <p>
+                  사람들은 향을 통해 많은 것을 인지합니다. 향은 형체가 보이지 않지만 많은 사람들에게 영감과 감정을 선사합니다. 또한 희미했던 기억들이 향을 매개로 선명하게 되살아 나기도 합니다.
+                </p>
+                <p>
+                  저는 이러한 향의 가치를 믿으며, 향기로운 디자이너가 되어 많은 사람들에게 영감과 좋은 감정을 선사하고, 기억 속에 오랫동안 남고 싶습니다.
+                </p>
+              </div>
+              <div class="info_img">
+                <img src="image/note.png" alt="">
+                <ul class="info_triangle">
+                  <li>
+                    <p>(01)</p>
+                    <span>TOP NOTE</span>
+                  </li>
+                  <li>
+                    <p>(02)</p>
+                    <span>MIDDLE NOTE</span>
+                  </li>
+                  <li>
+                    <p>(03)</p>
+                    <span>BASE NOTE</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="info_con">
+              <h2>
+                CONTENTS
+                <span class="material-symbols-outlined">keyboard_arrow_right</span>
+              </h2>
+              <ul class="info_con_inner">
+                <li>
+                  <a href="#publishing">
+                    <p>01</p>
+                    <div class="con_center">
+                      <span><b>TOP NOTE</b>: Web Publishing / Responsive Web</span>
+                      <span>SHOWBOX / KASI / TEKLA / Web Trends (4 projects)</span>
+                    </div>
+                    <div class="info_icon">
+                      <i class="material-symbols-outlined">devices</i>
+                      <i class="material-symbols-outlined">language</i>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#mobile">
+                    <p>02</p>
+                    <div class="con_center">
+                      <span><b>MIDDLE NOTE</b>: Mobile Web</span>
+                      <span>Visit Busan / POP!ular (2 projects)</span>
+                    </div>
+                    <div class="info_icon">
+                      <i class="material-symbols-outlined">phone_iphone</i>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#design">
+                    <p>03</p>
+                    <div class="con_center">
+                      <span><b>BASE NOTE</b>: UX · UI Design / Web Design</span>
+                      <span>Main Page Design / Banner / Illustrator Work / etc. (14 projects)</span>
+                    </div>
+                    <div class="info_icon">
+                      <i class="material-symbols-outlined">person</i>
+                      <i class="material-symbols-outlined">design_services</i>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="designListBox">
-          <div class="designListBoxGlass">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+      </div>
+
+      <div id="about">
+        <div class="inner">
+          <div class="about_title">
+            <h1>About</h1>
           </div>
-          <span class="material-symbols-outlined uiuxBack">redo</span>
-            <ul class="designList_uiux">
-                <li data-alt="uiuxPop1" class="uiux_1 uiuxLi">
-                  <img src="img/uiux_nexon_150px_01.png" alt="">
+          <div class="about_text">
+            <div class="about_s1">
+              <div class="profile_name">
+                <h2>함지안 HAM JIAN</h2>
+              </div>
+              <div class="profile_info">
+                <div>
+                  <p>Birth</p><p>1999.01.04</p>
+                </div>
+                <div>
+                  <p>Phone</p> <p>010.5657.6085</p>
+                </div>
+                <div>
+                  <p>Email</p> <p>sujung6085@naver.com</p>
+                </div>
+                <div>
+                  <p>Address</p> <p>서울특별시 동대문구</p>
+                </div>
+              </div>
+              <img src="image/profile.png" alt="프로필사진">
+            </div>
+    
+            <div class="about_box">
+              <div class="about_s2">
+                <div class="education">
+                  <div class="ab-title">
+                    <h2>Education</h2>
+                    <!-- <p>학력사항</p> -->
+                  </div>
+                  <div class="ab-body abb1">
+                    <div class="ab-list">
+                      <p>2023.10</p>
+                      <div>
+                        <h3>이젠아카데미평생교육원 수료</h3>
+                        <h4>모바일웹 & 앱디자인과정</h4>
+                      </div>
+                    </div>
+                    <div class="ab-list">
+                      <p>2023.02</p>
+                      <div>
+                        <h3>건국대학교 글로컬 캠퍼스 졸업</h3>
+                        <h4>산업디자인학과</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="projects">
+                  <div class="ab-title">
+                    <h2>Projects</h2>
+                    <!-- <p>활동내역 및 수상</p> -->
+                  </div>
+                  <div class="ab-body abb1">
+                    <div class="ab-list">
+                      <p>2022.09</p>
+                      <div>
+                        <h3>충주시 교현2동 노인특화공원 조성사업</h3>
+                        <h4>건국대학교 시청 관학협력 프로젝트</h4>
+                      </div>
+                    </div>
+                    <div class="ab-list">
+                      <p>2022.03</p>
+                      <div>
+                        <h3>2022 산업디자인학과 졸업전시 졸업준비위원회</h3>
+                        <h4>편집차장으로 활동 포스터 및 도록 제작, SNS 관리, 전시 기획</h4>
+                      </div>
+                    </div>
+                    <div class="ab-list">
+                      <p>2022.12</p>
+                      <div>
+                        <h3>PINUP DESIGN 국내 공모전 개인작업 <b>입선</b></h3>
+                        <h4><휠체어 이용자를 위한 우산> 출품</h4>
+                      </div>
+                    </div>
+                    <div class="ab-list">
+                      <p>2021.09</p>
+                      <div>
+                        <h3>충주시 수안보면 장터 1~3길 ‘도로다이어트’ 조성사업</h3>
+                        <h4>건국대학교 시청 관학협력 프로젝트</h4>
+                      </div>
+                    </div>
+                    <div class="ab-list">
+                      <p>2020.06</p>
+                      <div>
+                        <h3>JAMES DYSON 해외 공모전 팀작업 <b>Finalist</b></h3>
+                        <h4><전기 수급이 어려운 지역, 난민을 위한 조명 대체재> 출품</h4>
+                      </div>
+                    </div>
+                    <div class="ab-list">
+                      <p>2020.05</p>
+                      <div>
+                        <h3>SPARK DESIGN 해외 공모전 팀작업 <b>Bronze Winner</b></h3>
+                        <h4><반려동물을 위한 소변 검사 건강 진단 키트> 출품</h4>
+                      </div>
+                    </div>
+                    <div class="ab-list">
+                      <p>2020.05</p>
+                      <div>
+                        <h3>산업디자인 소모임 ‘Default’ 활동</h3>
+                        <h4>팀원들과 매주 다른 주제의 산업디자인 결과물 도출 및 토론</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="about_s3">
+                <div class="experience">
+                  <div class="ab-title">
+                    <h2>Experience</h2>
+                    <!-- <p>경험</p> -->
+                  </div>
+                  <div class="ab-body abb2">
+                    <div class="ab-list">
+                      <p>2022.12-2023.02</p>
+                      <div>
+                        <h3>한국 Flow 베트남 지사 해외 인턴십</h3>
+                        <h4>FLOW 제품 베트남 튜토리얼 제작, 현지화 디자인</h4>
+                      </div>
+                    </div>
+                    <div class="ab-list">
+                      <p>2021.07-2021.08</p>
+                      <div>
+                        <h3>플러스스페이스 인턴 활동</h3>
+                        <h4>전시 조형물 제작, 전시 시각 자료물 제작</h4>
+                      </div>
+                    </div>
+                    <div class="ab-list">
+                      <p>2021.03-2021.05</p>
+                      <div>
+                        <h3>충주 한림디자인고등학교 디자인 실기 방과후 교사</h3>
+                        <h4>고등학교 2, 3학년 입시미술 지도, 입시미술 자료 제작</h4>
+                      </div>
+                    </div>
+                    <div class="ab-list">
+                      <p>2020.05-2020.12</p>
+                      <div>
+                        <h3>충주 모다 아울렛 다수 매장 아르바이트</h3>
+                        <h4>매장관리, 상세안내, 진열, 검수 및 응대</h4>
+                      </div>
+                    </div>
+                    <div class="ab-list">
+                      <p>2016.11-2020.03</p>
+                      <div>
+                        <h3>플라워 입시 미술학원 보조 강사</h3>
+                        <h4>고등학교 3학년 입시미술 지도 및 시범</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="skills">
+                  <div class="ab-title">
+                    <h2>Skills</h2>
+                    <!-- <p>스킬</p> -->
+                  </div>
+                  <div class="ab-body2">
+                    <div class="ab-grid1">
+                      <div class="ab-gage">
+                        <div>
+                          <h2>illustrator</h2>
+                          <h3>95%</h3>
+                        </div>
+                        <span><b></b></span>
+                      </div>
+                      <div class="ab-gage">
+                        <div>
+                          <h2>Photoshop</h2>
+                          <h3>90%</h3>
+                        </div>
+                        <span><b></b></span>
+                      </div>
+                      <div class="ab-gage">
+                        <div>
+                          <h2>Figma</h2>
+                          <h3>90%</h3>
+                        </div>
+                        <span><b></b></span>
+                      </div>
+                      <div class="ab-gage">
+                        <div>
+                          <h2>Rhino3D</h2>
+                          <h3>60%</h3>
+                        </div>
+                        <span><b></b></span>
+                      </div>
+                      <div class="ab-gage ab-gage-icon">
+                        <p><img src="image/skill_icon_1.png" alt="Scss"></p>
+                        <p><img src="image/skill_icon_2.png" alt="Bootstrap"></p>
+                        <p><img src="image/skill_icon_3.png" alt="SVG"></p>
+                        <p><img src="image/skill_icon_4.png" alt="Notion"></p>
+                        <p><img src="image/skill_icon_5.png" alt="GitHub"></p>
+                      </div>
+                    </div>
+                    <div class="ab-grid2">
+                      <div class="ab-gage">
+                        <div>
+                          <h2>HTML5</h2>
+                          <h3>90%</h3>
+                        </div>
+                        <span><b></b></span>
+                      </div>
+                      <div class="ab-gage">
+                        <div>
+                          <h2>CSS3</h2>
+                          <h3>90%</h3>
+                        </div>
+                        <span><b></b></span>
+                      </div>
+                      <div class="ab-gage">
+                        <div>
+                          <h2>jQuery</h2>
+                          <h3>70%</h3>
+                        </div>
+                        <span><b></b></span>
+                      </div>
+                      <div class="ab-gage">
+                        <div>
+                          <h2>Javascript</h2>
+                          <h3>65%</h3>
+                        </div>
+                        <span><b></b></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- PUBLISHING=============================================== -->
+      <div id="publishing">
+        <div class="pub_inner">
+          <div class="pub_title">
+            <h1>Web Publishing</h1>
+          </div>
+    
+          <div class="pub_contents">
+            <div class="pub_swiper">
+              <!-- Swiper -->
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slide1">
+                    <div class="slide_img">
+                      <a href="https://ham-jian.github.io/allpage/" target="_blank">
+                        <img src="image/slide1_img1.png" alt="쇼박스 썸네일1">
+                      </a>
+                    </div>
+                    <div class="pub_shortcuts">
+                      <a href="https://ham-jian.github.io/allpage/" target="_blank">
+                        <span>Go to Site</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide slide2">
+                    <div class="slide_img">
+                      <a href="https://ham-jian.github.io/Public-institution-site/" target="_blank">
+                        <p class="slide_img_long"></p>
+                      </a>
+                    </div>
+                    <div class="pub_shortcuts">
+                      <a href="https://ham-jian.github.io/Public-institution-site/" target="_blank">
+                        <span>Go to Site</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide slide3">
+                    <div class="slide_img">
+                      <a href="https://ham-jian.github.io/onepage/" target="_blank">
+                        <p class="slide_img_long"></p>
+                      </a>
+                    </div>
+                    <div class="pub_shortcuts">
+                      <a href="https://ham-jian.github.io/onepage/" target="_blank">
+                        <span>Go to Site</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+            
+            <div class="pub_desc">
+              <ul class="pub_desc_inner">
+                <li class="active">
+                  <h2>SHOWBOX <br>
+                    WEB REDESIGN</h2>
+                  <h3>쇼박스 전체페이지 리디자인</h3>
+                  <div class="pub_desc_center">
+                    <div class="pub_desc_cel_top">
+                      <p>PC WEBSITE</p>
+                      <p>PC 고정형</p>
+                      <p>웹 웹표준 준수</p>
+                    </div>
+                    <div class="pub_desc_center_row">
+                      <div class="pub_desc_cel">
+                        <p>제작범위</p>
+                        <span>전체페이지 (Main 1 + Sub 6)</span>
+                      </div>
+                      <div class="pub_desc_cel">
+                        <p>제작기간</p>
+                        <span>15day</span>
+                      </div>
+                    </div>
+                    <div class="pub_desc_cel">
+                      <p>개발환경</p>
+                      <span>HTML5  CSS3  jQuery  Figma</span>
+                    </div>
+                    <div class="pub_desc_cel">
+                      <p>기여도</p>
+                      <span>PERSONAL PROJECT 100%</span>
+                    </div>
+                  </div>
+                  <button class="pub_desc_btn">
+                    <a href="http://sujung6085.dothome.co.kr/" target="_blank">
+                      <span>완성된 웹사이트로 이동</span>
+                      <i class="material-symbols-outlined">open_in_new</i>
+                    </a>
+                  </button>
                 </li>
-                <li data-alt="uiuxPop2" class="uiux_2 uiuxLi">
-                  <img src="img/uiux_shinhan_150px_02.png" alt="">
+                <li>
+                  <h2>KASI <br> WEB REDESIGN</h2>
+                  <h3>한국천문연구원 웹사이트 리디자인</h3>
+                  <div class="pub_desc_center">
+                    <div class="pub_desc_cel_top">
+                      <p>PC WEBSITE</p>
+                      <p>PC 고정형</p>
+                      <p>웹 웹표준 준수</p>
+                    </div>
+                    <div class="pub_desc_center_row">
+                      <div class="pub_desc_cel">
+                        <p>제작범위</p>
+                        <span>메인페이지</span>
+                      </div>
+                      <div class="pub_desc_cel">
+                        <p>제작기간</p>
+                        <span>7day</span>
+                      </div>
+                    </div>
+                    <div class="pub_desc_cel">
+                      <p>개발환경</p>
+                      <span>HTML5  CSS3  jQuery  Figma</span>
+                    </div>
+                    <div class="pub_desc_cel">
+                      <p>기여도</p>
+                      <span>PERSONAL PROJECT 100%</span>
+                    </div>
+                  </div>
+                  <button class="pub_desc_btn">
+                    <a href="https://ham-jian.github.io/Public-institution-site/" target="_blank">
+                      <span>완성된 웹사이트로 이동</span>
+                      <i class="material-symbols-outlined">open_in_new</i>
+                    </a>
+                  </button>
                 </li>
-                <li data-alt="uiuxPop3" class="uiux_3 uiuxLi">
-                  <img src="img/uiux_peoplecar_150px_03.png" alt="">
+                <li>
+                  <h2>TEKLA <br> WEB REDESIGN</h2>
+                  <h3>테클라 웹사이트 리디자인</h3>
+                  <div class="pub_desc_center">
+                    <div class="pub_desc_cel_top">
+                      <p>PC WEBSITE</p>
+                      <p>PC 고정형</p>
+                      <p>웹 웹표준 준수</p>
+                    </div>
+                    <div class="pub_desc_center_row">
+                      <div class="pub_desc_cel">
+                        <p>제작범위</p>
+                        <span>메인페이지</span>
+                      </div>
+                      <div class="pub_desc_cel">
+                        <p>제작기간</p>
+                        <span>7day</span>
+                      </div>
+                    </div>
+                    <div class="pub_desc_cel">
+                      <p>개발환경</p>
+                      <span>HTML5  CSS3</span>
+                    </div>
+                    <div class="pub_desc_cel">
+                      <p>기여도</p>
+                      <span>PERSONAL PROJECT 100%</span>
+                    </div>
+                  </div>
+                  <button class="pub_desc_btn">
+                    <a href="https://ham-jian.github.io/onepage/" target="_blank">
+                      <span>완성된 웹사이트로 이동</span>
+                      <i class="material-symbols-outlined">open_in_new</i>
+                    </a>
+                  </button>
                 </li>
-                <li data-alt="uiuxPop4" class="uiux_4 uiuxLi">
-                  <img src="img/uiux_bhs_150px_04.png" alt="">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESPONSIVE============================================== -->
+      <div id="responsive">
+        <div class="res_inner">
+          <div class="res_title">
+            <h1>Responsive web</h1>
+          </div>
+          <div class="res_content">
+            <div class="res_imgbox">
+              <div class="res_notice">
+                <span>각 화면을 클릭하여 완성 페이지로 이동하세요.</span>
+              </div>
+              <div class="res_device">
+                <div class="res_pc">
+                  <a href="https://ham-jian.github.io/Responsive/" target="_blank">
+                    <p class="res_pc_frame"></p>
+                    <p class="res_pc_long"></p>
+                  </a>
+                </div>
+                <div class="res_tablet">
+                  <a href="#none" onclick="MM_openBrWindow('https://ham-jian.github.io/Responsive/','win','scrollbars=no,width=744px,height=1133px,top=0,left=0')">
+                    <p class="res_tablet_frame"></p>
+                    <p class="res_tablet_long"></p>
+                  </a>
+                </div>
+                <div class="res_mobile">
+                  <a href="#none" onclick="MM_openBrWindow('https://ham-jian.github.io/Responsive/','win','scrollbars=no,width=428px,height=800px,top=0,left=0')">
+                    <p class="res_mobile_frame"></p>
+                    <p class="res_mobile_long"></p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="res_desc">
+              <div class="res_desc_title">
+                <h2>WEB TRENDS 2023 <br>WEB DESIGN</h2>
+                <h3>웹트렌드 2023 반응형 웹디자인</h3>
+              </div>
+              <div class="res_desc_center">
+                <!-- <div class="res_desc_cel_top">
+                  <p>PC WEBSITE</p>
+                  <p>PC 고정형</p>
+                  <p>웹 웹표준 준수</p>
+                </div> -->
+                <div class="res_desc_center_row">
+                  <div class="res_desc_cel">
+                    <p>제작범위</p>
+                    <span>메인페이지</span>
+                  </div>
+                  <div class="res_desc_cel">
+                    <p>제작기간</p>
+                    <span>14day</span>
+                  </div>
+                </div>
+                <div class="res_desc_center_row">
+                  <div class="res_desc_cel">
+                    <p>개발환경</p>
+                    <span>HTML5  CSS3  jQuery  Figma</span>
+                  </div>
+                  <div class="res_desc_cel">
+                    <p>기여도</p>
+                    <span>PERSONAL PROJECT 100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE=================================================== -->
+      <div id="mobile">
+        <div class="mobile_inner">
+          <div class="mobile_title">
+            <h1>Mobile Web</h1>
+          </div>
+
+          <div class="mobile_contents">
+            <div class="mob_desc">
+              <ul class="mob_desc_inner">
+                <li class="active mdesc_1">
+                  <h2>VISIT BUSAN <br> MOBILE REDESIGN</h2>
+                  <h3>비짓부산 모바일 웹 리디자인</h3>
+                  <div class="mob_desc_center">
+                    <div class="mob_desc_cel_top">
+                      <p>MOBILE WEBSITE</p>
+                      <p>MOBILE 고정형</p>
+                      <p>웹 웹표준 준수</p>
+                    </div>
+                    <div class="mob_desc_center_row">
+                      <div class="mob_desc_cel">
+                        <p>제작범위</p>
+                        <span>전체페이지 (Main 1 + Sub 17)</span>
+                      </div>
+                      <div class="mob_desc_cel">
+                        <p>제작기간</p>
+                        <span>14day</span>
+                      </div>
+                    </div>
+                    <div class="mob_desc_cel">
+                      <p>개발환경</p>
+                      <span>HTML5  CSS3 Javascript jQuery  Figma</span>
+                    </div>
+                    <div class="mob_desc_cel mob_contribution">
+                      <p>기여도</p>
+                      <span>
+                        -Team Project / Contribution 25% <br>
+                        -Main page Design 95% <br>
+                        -Sub page(부산에가면) Design, Coding 100%
+                      </span>
+                    </div>
+                  </div>
+                  <div class="mob_desc_btns">
+                    <button class="mob_desc_btn">
+                      <a href="#none" onclick="MM_openBrWindow('http://yk92.pe.kr','win','scrollbars=no,width=420px,height=680px,top=0,left=0')">
+                        <span>완성된 웹사이트로 이동</span>
+                        <i class="material-symbols-outlined">open_in_new</i>
+                      </a>
+                    </button>
+                    <button class="mob_desc_btn">
+                      <a href="https://www.figma.com/file/KgGcUUUuE2WM77LSFfSzFF/VISIT-BUSAN?type=design&node-id=0%3A1&mode=design&t=R6RBKO0ywnIKreC9-1" target="_blank">
+                        <span>Figma</span>
+                        <i class="material-symbols-outlined">open_in_new</i>
+                      </a>
+                    </button>
+                    <button class="mob_desc_btn">
+                      <a href="https://github.com/yukyungyu/visitbusan" target="_blank">
+                        <span>GitHub</span>
+                        <i class="material-symbols-outlined">open_in_new</i>
+                      </a>
+                    </button>
+                  </div>
                 </li>
-                <li data-alt="uiuxPop5" class="uiux_5 uiuxLi">
-                  <img src="img/uiux_airseoul_150px_05.png" alt="">
+                <li class="mdesc_2">
+                  <h2>POPu!ar <br> MOBILE APP DESIGN</h2>
+                  <h3>팝업 행사 큐레이션 및 일정 관리 서비스 어플</h3>
+                  <div class="mob_desc_center">
+                    <div class="mob_desc_cel_top">
+                      <p>MOBILE APP</p>
+                    </div>
+                    <div class="mob_desc_center_row">
+                      <div class="mob_desc_cel">
+                        <p>제작범위</p>
+                        <span>전체페이지 (Main 1 + Sub 12)</span>
+                      </div>
+                      <div class="mob_desc_cel">
+                        <p>제작기간</p>
+                        <span>12day</span>
+                      </div>
+                    </div>
+                    <div class="mob_desc_cel">
+                      <p>사용툴</p>
+                      <span>Figma Illustrator</span>
+                    </div>
+                    <div class="mob_desc_cel mob_contribution">
+                      <p>기여도</p>
+                      <span>PERSONAL PROJECT 100%</span>
+                    </div>
+                  </div>
+                  <div class="mob_desc_btns">
+                    <button class="mob_desc_btn">
+                      <a href="#none">
+                        <span>뷰페이지로 이동</span>
+                        <i class="material-symbols-outlined">
+                          arrow_forward
+                        </i>
+                      </a>
+                  </div>
                 </li>
-                <li data-alt="uiuxPop6" class="uiux_6 uiuxLi">
-                  <img src="img/uiux_dokdo_150px_06.png" alt="">
-                </li>
-                <li data-alt="uiuxPop7" class="uiux_7 uiuxLi">
-                  <img src="img/uiux_unicef_150px_07.png" alt="">
-                </li>
-                <li data-alt="uiuxPop8" class="uiux_8 uiuxLi">
-                  <img src="img/uiux_billboard_150px_08.png" alt="">
-                </li>
-            </ul>
-            <ul class="designList_TwoD">
-              <li data-alt="twoD_1" class="twoD_1 twodLi">
-                <img src="img/2D_icon_150px_01.png" alt="">
-              </li>
-              <li data-alt="twoD_2" class="twoD_2 twodLi">
-                <img src="img/2D_icon_150px_02.png" alt="">
-              </li>
-              <li data-alt="twoD_3" class="twoD_3 twodLi">
-                <img src="img/2D_icon_150px_03.png" alt="">
-              </li>
-              <li data-alt="twoD_4" class="twoD_4 twodLi">
-                <img src="img/2D_icon_150px_04.png" alt="">
-              </li>
-              <li data-alt="twoD_5" class="twoD_5 twodLi">
-                <img src="img/2D_icon_150px_05.png" alt="">
-              </li>
-              <li data-alt="twoD_6" class="twoD_6 twodLi">
-                <img src="img/2D_icon_150px_06.png" alt="">
-              </li>
-              <li data-alt="twoD_7" class="twoD_7 twodLi">
-                <img src="img/2D_icon_150px_07.png" alt="">
-              </li>
-              <li data-alt="twoD_8" class="twoD_8 twodLi">
-                <img src="img/2D_icon_150px_08.png" alt="">
-              </li>
-              <li data-alt="twoD_9" class="twoD_9 twodLi">
-                <img src="img/2D_icon_150px_09.png" alt="">
-              </li>
-              <li data-alt="twoD_10" class="twoD_10 twodLi">
-                <img src="img/2D_icon_150px_10.png" alt="">
-              </li>
+              </ul>
+            </div>
+
+            <div class="mob_swiper">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide mslide mslide1">
+                    <a href="#none" onclick="MM_openBrWindow('http://yk92.pe.kr','win','scrollbars=no,width=420px,height=680px,top=0,left=0')" class="mslide_img">
+                      <img src="image/mslide1_img1.png" alt="비짓부산 썸네일1" >
+                      <img src="image/mslide1_img2.png" alt="비짓부산 썸네일2">
+                    </a>
+                  </div>
+                  <div class="swiper-slide mslide mslide2">
+                    <a href="#none" class="mslide_img"></a>
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+
+            <!-- 모바일 뷰페이지 팝업 -->
+            <div id="mpopup">
+              <div class="pop_body">
+                <ul class="mpop">
+                  <li><img src="image/mpop_img.png" alt="파퓰러 어플 뷰페이지"></li>
+                </ul>
+                <div class="btn_close">
+                  <i class="material-symbols-outlined">close</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WEB DESIGN=============================================== -->
+      <div id="design">
+        <div class="design_title">
+          <h1>Web Design</h1>
+        </div>
+        <div class="design_tab">
+          <ul class="tab_menu">
+            <li class="tab_active" data-alt="tab1">UX · UI Design <span>(6)</span></li>
+            <li data-alt="tab2">Graphic Design <span>(8)</span></li>
           </ul>
-        </div>
-        <div class="uiuxPopUp uiuxPopUp1" id="uiuxPop1">
-          <div class="uiuxPopUpIn">
-            <div class="uiuxInfoBox uiuxInfo_Intro">
-              <h2 class="bigNum bigNumcolor_1">#01</h2>
-              <div class="uiuxInfo_IntroTitle">
-                <ul class="useTool">
-                  <li><img src="img/useTool_ps.png" alt=""></li>
-                </ul>
-                <h3>UI/UX Design</h3>
-                <p class="uiuxWork_name">NEXON 메인 페이지</p>
-                <P class="uiuxWork_date">작업기간: 1d</P>
-                <p class="uiuxWork_serve">작업기여도: 100% 개인작업!</p>
-                <p class="imgCopyright">이미지 출처: NEXON</p>
-                <p class="noCommen">본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</p>
-              </div>
-              <div class="neon_arrowAll">
-                <span class="material-symbols-outlined neonArrow">keyboard_double_arrow_down</span>
-              </div>
-              <img src="img/Web_D_01(Grid).png" alt="" class="nexonMockUp">
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content1">
-              <h2 class="DesignConcept">Design Concept</h2>
-              <ul class="hashTag hashTagColor_1">
-                <li>#고급화</li>
-                <li>#깔끔함</li>
-                <li>#그리드</li>
-                <li>#편리함</li>
-              </ul>
-              <div class="color_fontBox">
-                <div class="colorAll">
-                  <h4>color</h4>
-                  <ul class="colorList">
-                    <li>
-                      <div class="colorBox nexonColor1"></div>
-                      <p>#1A2990</p>
-                    </li>
-                    <li>
-                      <div class="colorBox nexonColor2"></div>
-                      <p>#FFFFFF</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="fontAll">
-                  <h4>font</h4>
-                  <ul class="fontList">
-                    <li>Noto Sans KR</li>
-                  </ul>
-                </div>
-              </div>
-              <p class="content1_p">
-                대한민국 No.1 게임사이트 NEXON입니다. 누구나 한 번쯤은 방문 해보았을 사이트죠. <br>
-                이번 디자인에서는 기존 사이트의 밝은 면을 제거하여 더욱 고급스러운 느낌으로 재 디자인 하기로 했습니다.
-              </p>
-              <img src="img/dao.png" alt="" class="dao">
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content2">
-              <div class="uiuxInfo_content2_left">
-                <img src="img/PS.png" alt="">
-              </div>
-              <div class="uiuxInfo_content2_right">
-                <h2 class="emphasizeTitle">영감을 얻다</h2>
-                <p>
-                  왼쪽에는 세계적인 게임콘솔 Playstation의 로비 화면이 보입니다.<br>
-                  저는 이 로비 화면에 있는 특유의 무늬에서 영감을 얻었습니다. <br>
-                  특별히 많은 손이 가는 디자인은 아니지만 세련된 느낌을 주기에는 충분합니다!
-                </p>
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content3">
-              <div class="uiuxInfo_content3_left">
-                <h2 class="emphasizeTitle">배경을 제작하다</h2>
-                <p>
-                  좋은 영감을 얻었으니 이제 만들어 보겠습니다.<br>
-                  우선 사각 선택툴을 사용하여 원하는 크기의 영역을 잡아 주었습니다.
-                  그 후 미리 계획해둔 색상을 반투명 그라데이션에 적용 시켜준 뒤
-                  PhotoShop의 Wrap 기능을 이용하여 원하는 물결 무늬가 나올 때까지 조정해줍니다!
-                  마지막으로 각 레이어마다 Opacity를 달리하거나 Blender 기능을 이용하여 마무리 했습니다.
-                  오른쪽 사진은 실제 PhotoShop에서 해당 작업을 하는 모습입니다. 
-                </p>
-              </div>
-              <div class="uiuxInfo_content3_right">
-                <img src="img/warpPic.png" alt="">
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content4">
-              <h2 class="emphasizeTitle">그리드 그리고 완성</h2>
-              <p>
-                많은 양의 게임들을 손 쉽게 찾을 수 있도록 Gird 디자인을 채택했습니다.
-                게임 인기도에 따른 Grid 크기의 차이를 두어 심심한 느낌을 없앴습니다.
-                게임 장르를 빠르게 찾을 수 있게 왼쪽 상단에는 장르 메뉴를 위치시켰으며,
-                트렌디한 느낌을 주고자 해시태그 형식으로 디자인 하였습니다! 
-                <br><br>
-                아래 완성본을 확인해보세요!
-              </p>
-              <img src="img/Nexon_all.png" alt="" class="nexonAll">
-              <div class="noCommenBottomBar noCommenBottomBarcolor1">
-                <img src="img/logo.png" alt="" class="bottomlogo">
-                <h6>본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</h6>
-              </div>
-            </div>       
-          </div>
-          <img src="img/nexon_back.png" alt="" class="nexon_back_1">
-          <img src="img/nexon_back2.png" alt="" class="nexon_back_2">
-          <img src="img/nexon_back2.png" alt="" class="nexon_back_3">
-        </div>
-        <div class="uiuxPopUp uiuxPopUp1" id="uiuxPop2">
-          <div class="uiuxPopUpIn">
-            <div class="uiuxInfoBox uiuxInfo_Intro">
-              <h2 class="bigNum bigNumcolor_2">#02</h2>
-              <div class="uiuxInfo_IntroTitle">
-                <ul class="useTool">
-                  <li><img src="img/useTool_ps.png" alt=""></li>
-                  <li><img src="img/useTool_ai.png" alt=""></li>
-                </ul>
-                <h3>UI/UX Design</h3>
-                <p class="uiuxWork_name">삼성카드2 안내페이지</p>
-                <P class="uiuxWork_date">작업기간: 1d</P>
-                <p class="uiuxWork_serve">작업기여도: 100% 개인작업!</p>
-                <p class="imgCopyright">이미지 출처: PIXABAY</p>
-                <p class="noCommen">본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</p>
-              </div>
-              <div class="neon_arrowAll">
-                <span class="material-symbols-outlined neonArrow">keyboard_double_arrow_down</span>
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content2_1">
-              <h2 class="DesignConcept">Design Concept</h2>
-              <ul class="hashTag hashTagColor_2">
-                <li>#콘셉트 준수</li>
-                <li>#강조</li>
-                <li>#색상</li>
-                <li>#이미지</li>
-              </ul>
-              <div class="color_fontBox">
-                <div class="colorAll">
-                  <h4>color</h4>
-                  <ul class="colorList">
-                    <li>
-                      <div class="colorBox samsungcardColor1"></div>
-                      <p>#36105a</p>
-                    </li>
-                    <li>
-                      <div class="colorBox samsungcardColor2"></div>
-                      <p>#FFFFFF</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="fontAll">
-                  <h4>font</h4>
-                  <ul class="fontList">
-                    <li>G마켓 산스 TTF</li>
-                    <li>나눔 손글씨 붓</li>
-                  </ul>
-                </div>
-              </div>
-              <p class="content1_p">
-                삼성카드2의 ‘2’를 혜택 중 문화 및 생활 분야 혜택에 접목시켜<br>
-                두 배의 혜택을 받는다는 계획을 잡고 디자인 했습니다.
-                <br><br>
-                배경 사진은 ‘PIXABAY’에서 다운로드 받았으며<br>
-                전체적인 디자인 작업은 배경 사진 색상, 분위기에 맞게
-                진행 되었습니다.
-              </p>
-              <img src="img/trans2.png" alt="" class="trans2_1">
-              <img src="img/trans2_2.png" alt="" class="trans2_2">
-              <img src="img/transball1.png" alt="" class="transball_1">
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content2_2">
-              <div class="uiuxInfo_content2_2_left">
-                <img src="img/roma2.png" alt="" class="roma2">
-              </div>
-              <div class="uiuxInfo_content2_2_right">
-                <h2 class="emphasizeTitle">강조하다</h2>
-                <p>
-                  삼성카드2의 '2' 를 강조 합니다. 더불어 두 배 혜택도 강조합니다.
-                  적절히 강조된 레이어들은 사용자에게 간단하게 정확한 의미 전달을 할 수 있게 됩니다.
-                  <br><br>
-                  왼쪽에 로마숫자2는 텍스트에서 일반 레이어롤 변경 후 여러 타원 레이어와 합치고 PhotoShop - FilterGallary의 Glwing Edges 필터를 사용했습니다.
-                </p>
-                <img src="img/doit.png" alt="" class="doit">
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content2_3">
-              <div class="samsungcardBackInfo">
-                <img src="img/popup2_content_Pic_01.png" alt="" class="samsungcardBack">
-                <div class="samsungcardBackInfoText">
-                  <h2>PIXABAY 배경이미지</h2>
+
+          <div class="tab_contents">
+            <div id="tab1" class="active">
+              <ul class="content_list cl1">
+                <li class="card-1-1 card_section_1">
+                  <div class="tool">
+                    <span class="ai"></span>
+                    <span class="ps"></span>
+                    <span class="fig"></span>
+                  </div>
                   <p>
-                    문화생활을 대표할 수 있는 이미지로 공연에 관한 이미지를 채용했습니다.
-                    최대한 같은 색상을 나타내는 이미지 두 개를 골랐으며, PhotoShop에서
-                    Layer Mask를 사용하여 합성 하였습니다.
+                    <span>현대카드 프로모션 페이지 디자인</span>
                   </p>
-                </div>
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content2_4">
-              <h2 class="emphasizeTitle">완성</h2>
-              <p>
-                Illustrator에서의 아이콘 작업과 가독성 향상을 위한 텍스트 조절 작업이 완료된
-                최종 완성본입니다.
-              </p>
-              <img src="img/popup2_content_Pic_03.jpg" alt="">
-            </div>     
-            <div class="uiuxInfoBox uiuxInfo_content2_4">
-              <div class="noCommenBottomBar noCommenBottomBarcolor2">
-                <img src="img/logo.png" alt="" class="bottomlogo">
-                <h6>본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</h6>
-              </div> 
-            </div>  
-          </div>
-          <img src="img/popup2_back1.png" alt="" class="samsungcardIntroBack">
-        </div>
-        <div class="uiuxPopUp uiuxPopUp1" id="uiuxPop3">
-          <div class="uiuxPopUpIn">
-            <div class="uiuxInfoBox uiuxInfo_Intro">
-              <h2 class="bigNum bigNumcolor_3">#03</h2>
-              <div class="uiuxInfo_IntroTitle">
-                <ul class="useTool">
-                  <li><img src="img/useTool_ps.png" alt=""></li>
-                  <li><img src="img/useTool_ai.png" alt=""></li>
-                </ul>
-                <h3>UI/UX Design</h3>
-                <p class="uiuxWork_name">피플카 모바일</p>
-                <P class="uiuxWork_date">작업기간: 8d</P>
-                <p class="uiuxWork_serve">작업기여도: 100% 개인작업!</p>
-                <p class="imgCopyright">이미지 출처: 현대기아자동차, PIXABAY</p>
-                <p class="noCommen">본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</p>
-              </div>
-              <div class="neon_arrowAll">
-                <span class="material-symbols-outlined neonArrow">keyboard_double_arrow_down</span>
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content3_1">
-              <h2 class="DesignConcept">Design Concept</h2>
-              <ul class="hashTag hashTagColor_3">
-                <li>#뉴모피즘</li>
-                <li>#다크모드</li>
-                <li>#사용성</li>
-              </ul>
-              <div class="color_fontBox">
-                <div class="colorAll">
-                  <h4>color</h4>
-                  <ul class="colorList">
-                    <li>
-                      <div class="colorBox peoplecarColor1"></div>
-                      <p>#702C8A</p>
-                    </li>
-                    <li>
-                      <div class="colorBox peoplecarColor2"></div>
-                      <p>#FFFFFF</p>
-                    </li>
-                    <li>
-                      <div class="colorBox peoplecarColor3"></div>
-                      <p>#1d1d27</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="fontAll">
-                  <h4>font</h4>
-                  <ul class="fontList">
-                    <li>Noto Sans KR</li>
-                    <li>나눔고딕</li>
-                  </ul>
-                </div>
-              </div>
-              <p class="content1_p">
-                언제 어디서든 간편하게 자동차를 빌릴 수 있는 카셰어링 피플카입니다. <br>
-                무려 자동차라는 물건을 빌리는 어플이지만 사용하기에는 매우 간편하게 디자인 했습니다. <br>
-                트렌디한 뉴모피즘 디자인을 필두로한 저의 첫 모바일 디자인입니다.
-              </p>  
-              <img src="img/purpleBall.png" alt="" class="purpleBall">
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content3_2">
-              <div class="uiuxInfo_content3_2_left">
-                <div class="neumorphismbox">
-                  <img src="img/ray.png" alt="">
-                  <div class="neumorphismboxText">
-                    <h3>추천코스</h3>
-                    <p>회원분들이 추천하는 코스</p>
+                </li>
+                <li class="card-1-2">
+                  <div class="tool">
+                    <span class="ps"></span>
+                    <span class="fig"></span>
                   </div>
-                </div>
-              </div>
-              <div class="uiuxInfo_content3_2_right">
-                <h2 class="emphasizeTitle">뉴모피즘</h2>
-                <p>
-                  기존의 flat한 디자인에서 뉴모피즘 디자인을 적용 시켰습니다.<br>
-                  세련된 느낌을 극대화하여 사용자로 하여금 피플카 어플에 고급스러움을 느끼게 합니다.
-                </p>
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content3_3">
-              <div class="uiuxInfo_content3_3_left">
-                <h2 class="emphasizeTitle">시간 상관 없이<br>차를 빌립니다.</h2>
-                <p>
-                  언제 어디서든 차를 빌릴 수 있는 것이 피플카의 강점 입니다. <br>
-                  늦은 밤, 어두운 차 안에서도 눈의 피로를 줄일 수 있는 다크모드를 디자인 했습니다.
-                  <br><br>
-                  다크모드 특성상 뉴모피즘 디자인은 비활성화 됩니다.
-                </p>
-              </div>
-              <div class="uiuxInfo_content3_3_right">
-                <img src="img/peoplecarDark1.png" alt="" class="peoplecarDark1">
-                <img src="img/peoplecarDark2.png" alt="" class="peoplecarDark2">
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content3_4">
-              <h2 class="emphasizeTitle">완성</h2>
-              <ul class="peoplecarShotList">
-                <li id="peoplecar01"><img src="img/peoplecar01.jpg" alt=""></li>
-                <li id="peoplecar02"><img src="img/peoplecar02.jpg" alt=""></li>
-                <li id="peoplecar03"><img src="img/peoplecar03.jpg" alt=""></li>
-                <li id="peoplecar04"><img src="img/peoplecar04.jpg" alt=""></li>
-                <li id="peoplecar05"><img src="img/peoplecar05.jpg" alt=""></li>
-                <li id="peoplecar06"><img src="img/peoplecar06.jpg" alt=""></li>
-                <li id="peoplecar07"><img src="img/peoplecar07.jpg" alt=""></li>
-                <li id="peoplecar08"><img src="img/peoplecar08.jpg" alt=""></li>
-                <li id="peoplecar09"><img src="img/peoplecar09.jpg" alt=""></li>
-                <li id="peoplecar10"><img src="img/peoplecar10.jpg" alt=""></li>
-                <li id="peoplecar11"><img src="img/peoplecar11.jpg" alt=""></li>
+                  <p>
+                    <span>서울 공예 박물관 메인페이지 리디자인</span>
+                  </p>
+                </li>
+                <li class="card-1-3">
+                  <div class="tool">
+                    <span class="ps"></span>
+                    <span class="ai"></span>
+                  </div>
+                  <p>
+                    <span>테슬라 메인페이지 반응형 리디자인</span>
+                  </p>
+                </li>
+                <li class="card-1-4">
+                  <div class="tool">
+                    <span class="ps"></span>
+                    <span class="ai"></span>
+                  </div>
+                  <p>
+                    <span>설화수 메인페이지 리디자인</span>
+                  </p>
+                </li>
+                <li class="card-1-5">
+                  <div class="tool">
+                    <span class="ps"></span>
+                    <span class="ai"></span>
+                  </div>
+                  <p>
+                    <span>아르텍 상세페이지 리디자인</span>
+                  </p>
+                </li>
+                <li class="card-1-6 card_section_2">
+                  <div class="tool">
+                    <span class="ai"></span>
+                    <span class="ps"></span>
+                    <span class="fig"></span>
+                  </div>
+                  <p>
+                    <span>우리아이들 병원 메인+서브1 리디자인</span>
+                  </p>
               </ul>
-              <div class="noCommenBottomBar noCommenBottomBarcolor1">
-                <img src="img/logo.png" alt="" class="bottomlogo">
-                <h6>본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</h6>
-              </div> 
-            </div>  
-          </div>
-          <img src="img/peoplecarback.png" alt="" class="peoplecarIntroBack">
-        </div>
-        <div class="uiuxPopUp uiuxPopUp1" id="uiuxPop4">
-          <div class="uiuxPopUpIn">
-            <div class="uiuxInfoBox uiuxInfo_Intro">
-              <h2 class="bigNum bigNumcolor_3">#04</h2>
-              <div class="uiuxInfo_IntroTitle">
-                <ul class="useTool">
-                  <li><img src="img/useTool_ps.png" alt=""></li>
-                  <li><img src="img/useTool_ai.png" alt=""></li>
-                </ul>
-                <h3>UI/UX Design</h3>
-                <p class="uiuxWork_name">보현산 천문대</p>
-                <P class="uiuxWork_date">작업기간: 2d</P>
-                <p class="uiuxWork_serve">작업기여도: 100% 개인작업!</p>
-                <p class="imgCopyright">이미지 출처: 보현산천문대,NASA,한국천문연구원</p>
-                <p class="noCommen">본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</p>
-              </div>
-              <div class="neon_arrowAll">
-                <span class="material-symbols-outlined neonArrow">keyboard_double_arrow_down</span>
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content4_1">
-              <h2 class="DesignConcept">Design Concept</h2>
-              <ul class="hashTag hashTagColor_4">
-                <li>#메타볼</li>
-                <li>#도형</li>
-                <li>#신비로운</li>
-                <li>#동심</li>
-              </ul>
-              <div class="color_fontBox">
-                <div class="colorAll">
-                  <h4>color</h4>
-                  <ul class="colorList">
-                    <li>
-                      <div class="colorBox peoplecarColor1"></div>
-                      <p>#702C8A</p>
-                    </li>
-                    <li>
-                      <div class="colorBox peoplecarColor2"></div>
-                      <p>#FFFFFF</p>
-                    </li>
-                    <li>
-                      <div class="colorBox peoplecarColor3"></div>
-                      <p>#1d1d27</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="fontAll">
-                  <h4>font</h4>
-                  <ul class="fontList">
-                    <li>Noto Sans KR</li>
-                    <li>나눔고딕</li>
-                  </ul>
-                </div>
-              </div>
-              <p class="content1_p">
-                -국내 3대 천문 관측소 중 하나인 보현산 천문대- <br><br>
-                우주 분위기가 물씬 나는 디자인입니다. 
-                <br><br>
-                메타볼과 기하학적 패턴이 어우러져 신비로운 분위기를 나타낸답니다! <br>
-                우주를 바라볼 때면 어른도 동심으로 돌아가 호기심에 가득찹니다. <br>
-                동심, 이번 콘셉트에서 가장 큰 핵심 입니다.
 
-              </p>  
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content4_2">
-              <div class="uiuxInfo_content4_2_left">
-                <img src="img/metaball.png" alt="">
-              </div>
-              <div class="uiuxInfo_content4_2_right">
-                <h2 class="emphasizeTitle">Illustrator Script</h2>
-                <p>
-                  자연스러운 Metaball 제작은 어렵지 않았습니다. 바로 Script를 사용 했기 때문입니다. script를 사용하여 원과 원 사이 두께 조정 만으로
-                  간단하게 Metaball을 완성했습니다. 완성된 Metaball은 Menu로 사용됩니다.
-                </p>
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content4_3">
-              <div class="uiuxInfo_content4_3_left">
-                <p>
-                  배경 일부와 달에 들어가는 폴리곤 아트도 'somestuff.ru i♥∆' 사이트의 도움을 받아서 제작 했습니다.
-                </p>
-              </div>
-              <div class="uiuxInfo_content4_3_right">
-                <img src="img/triangle.png" alt="">
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content4_4">
-              <h2 class="emphasizeTitle">완성</h2>
-              <p>
-                신비로운 느낌을 내기에는 보라색 계열이 알맞다고 생각했습니다. <br>
-                그 결과 #6d36d5 색상을 사용하게 되었습니다.<br>
-                만들어둔 메타볼과 폴리곤 아트를 Photoshop으로 가져와 적용했으며, <br>
-                별자리, 별똥별 등 재밌는 요소를 집어넣어 마무리 했습니다.
-              </p>
-              <img src="img/meta.jpg" alt="" class="bhsAll">
-              <div class="noCommenBottomBar noCommenBottomBarcolor4">
-                <img src="img/logo.png" alt="" class="bottomlogo">
-                <h6>본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</h6>
-              </div> 
-            </div>  
-          </div>
-          <img src="img/popup4_back.png" alt="" class="popup4_back">
-          <div class="moon"></div>
-          <div class="comet1"></div>
-        </div>
-        <div class="uiuxPopUp uiuxPopUp1" id="uiuxPop5">
-          <div class="uiuxPopUpIn">
-            <div class="uiuxInfoBox uiuxInfo_Intro">
-              <h2 class="bigNum bigNumcolor_5">#05</h2>
-              <div class="uiuxInfo_IntroTitle">
-                <ul class="useTool">
-                  <li><img src="img/useTool_ps.png" alt=""></li>
-                  <li><img src="img/useTool_ai.png" alt=""></li>
-                </ul>
-                <h3>UI/UX Design</h3>
-                <p class="uiuxWork_name">에어서울 반응형</p>
-                <P class="uiuxWork_date">작업기간: 4d</P>
-                <p class="uiuxWork_serve">작업기여도: 100% 개인작업!</p>
-                <p class="imgCopyright">이미지 출처: 에어서울,PIXABAY</p>
-                <p class="noCommen">본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</p>
-              </div>
-              <div class="neon_arrowAll">
-                <span class="material-symbols-outlined neonArrow">keyboard_double_arrow_down</span>
+              <div id="popup"> <!--popup_box-->
+                <div class="pop_body clear">
+                  <ul class="pop">
+                    <li><img src="image/design_pop_img1-1.png" alt=""></li>
+                    <li><img src="image/design_pop_img1-2.png" alt=""></li>
+                    <li><img src="image/design_pop_img1-3.png" alt=""></li>
+                    <li><img src="image/design_pop_img1-4.png" alt=""></li>
+                    <li><img src="image/design_pop_img1-5.png" alt=""></li>
+                    <li><img src="image/design_pop_img1-6.png" alt=""></li>
+                  </ul>
+                  
+                  <!-- 버튼(좌우) -->
+                  <ul class="m_btn">
+                    <li class="left_btn"><i class="material-symbols-outlined">keyboard_arrow_left</i></li>
+                    <li class="right_btn"><i class="material-symbols-outlined">keyboard_arrow_right</i></li>
+                  </ul>
+                  <!-- 좌우버튼, 페이지 표시 -->
+                  <div class="btn_close">
+                    <i class="material-symbols-outlined">close</i>
+                  </div>
+                  <div class="g_page">
+                    <span>1</span> / <span>6</span>
+                  </div>
+                </div>			
               </div>
             </div>
-            <div class="uiuxInfoBox uiuxInfo_content5_1">
-              <h2 class="DesignConcept">Design Concept</h2>
-              <ul class="hashTag hashTagColor_5">
-                <li>#컨텐츠 배치</li>
-                <li>#민트</li>
-                <li>#반응형</li>
-                <li>#기획</li>
+  
+            <div id="tab2">
+              <ul class="content_list cl2">
+                <li class="card-2-1">
+                  <div class="tool">
+                    <span class="ai"></span>
+                    <span class="ps"></span>
+                  </div>
+                  <p>
+                    <span>덕수궁 석조전 일러스트 디자인</span>
+                  </p>
+                </li>
+                <li class="card-2-2">
+                  <div class="tool">
+                    <span class="ai"></span>
+                  </div>
+                  <p>
+                    <span>실사 일러스트 펜툴 드로잉</span>
+                  </p>
+                </li>
+                <li class="card-2-3">
+                  <div class="tool">
+                    <span class="ps"></span>
+                  </div>
+                  <p>
+                    <span>이솝 신제품 홍보 배너 디자인</span>
+                  </p>
+                </li>
+                <li class="card-2-4 card_section_3">
+                  <div class="tool">
+                    <span class="ps"></span>
+                  </div>
+                  <p>
+                    <span>스타벅스 이벤트 페이지 & 배너 디자인</span>
+                  </p>
+                </li>
+                <li class="card-2-5 card_section_4">
+                  <div class="tool">
+                    <span class="ai"></span>
+                  </div>
+                  <p>
+                    <span>올인원 시가 키트 제품디자인 & 브랜딩</span>
+                  </p>
+                </li>
+                <li class="card-2-6">
+                  <div class="tool">
+                    <span class="ai"></span>
+                  </div>
+                  <p>
+                    <span>팝업 광고 디자인</span>
+                  </p>
+                </li>
+                <li class="card-2-7">
+                  <div class="tool">
+                    <span class="ai"></span>
+                  </div>
+                  <p>
+                    <span>팝업 광고 디자인</span>
+                  </p>
+                </li>
+                <li class="card-2-8">
+                  <div class="tool">
+                    <span class="ai"></span>
+                  </div>
+                  <p>
+                    <span>팝업 광고 디자인</span>
+                  </p>
+                </li>
               </ul>
-              <div class="color_fontBox">
-                <div class="colorAll">
-                  <h4>color</h4>
-                  <ul class="colorList">
+
+              <div id="popup2"> <!--popup_box-->
+                <div class="pop_body clear">
+                  <ul class="pop2">
+                    <li><img src="image/design_pop_img2-1.png" alt=""></li>
+                    <li><img src="image/design_pop_img2-2.png" alt=""></li>
                     <li>
-                      <div class="colorBox airseoulColor1"></div>
-                      <p>#702C8A</p>
+                      <img src="image/design_pop_img2-3.png" alt="">
+                      <div class="pop_img2-3_gif"></div>
                     </li>
-                    <li>
-                      <div class="colorBox airseoulColor2"></div>
-                      <p>#FFFFFF</p>
-                    </li>
-                    <li>
-                      <div class="colorBox airseoulColor3"></div>
-                      <p>#000000</p>
-                    </li>
+                    <li><img src="image/design_pop_img2-4.png" alt=""></li>
+                    <li class="cover"><img src="image/design_pop_img2-5.png" alt=""></li>
+                    <li><img src="image/design_pop_img2-6.png" alt=""></li>
+                    <li><img src="image/design_pop_img2-7.png" alt=""></li>
+                    <li><img src="image/design_pop_img2-8.png" alt=""></li>
                   </ul>
-                </div>
-                <div class="fontAll">
-                  <h4>font</h4>
-                  <ul class="fontList">
-                    <li>나눔고딕</li>
+                  
+                  <!-- 버튼(좌우) -->
+                  <ul class="m_btn">
+                    <li class="left_btn"><i class="material-symbols-outlined">keyboard_arrow_left</i></li>
+                    <li class="right_btn"><i class="material-symbols-outlined">keyboard_arrow_right</i></li>
                   </ul>
-                </div>
-              </div>
-              <p class="content1_p">
-                It's Mint Time<br><br>
-                대한민국의 저비용 항공사 에어서울입니다. <br>
-                기존 사이트의 아쉬운 점을 체크하고 경쟁사 벤치마킹을 통한 탄탄한 초기 계획이 핵심입니다.
-              </p>  
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content5_2">
-              <a href="download/airseoul_report.zip" download>에어서울 기획 보고서 Download</a>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content5_3">
-              <div class="uiuxInfo_content5_3_left">
-                <img src="img/wireframe1.jpg" alt="" class="wireframe">
-              </div>
-              <div class="uiuxInfo_content5_3_right">
-                <h2 class="emphasizeTitle">와이어 프레임</h2>
-                <p>
-                  와이어 프레임을 토대로 작업을 진행합니다.<br>
-                  사용자의 관심이 가장 많이 향하는 순서대로 컨텐츠를 배치했습니다.<br>
-                  PC버전부터 모바일 버전까지 각각 가로 너비 1200px, 768px, 420px 입니다.<br>
-                </p>
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content5_4">
-              <h2 class="emphasizeTitle">완성</h2>
-              <img src="img/airseoulAll.jpg" alt="" class="airseoulAll">
-              <div class="noCommenBottomBar noCommenBottomBarcolor5">
-                <img src="img/logo.png" alt="" class="bottomlogo">
-                <h6>본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</h6>
-              </div> 
-            </div>  
-          </div>
-          <img src="img/Web_D_15(Airseoul).png" class="airseoulBack" alt="">
-        </div>
-        <div class="uiuxPopUp uiuxPopUp1" id="uiuxPop6">
-          <div class="uiuxPopUpIn">
-            <div class="uiuxInfoBox uiuxInfo_Intro">
-              <h2 class="bigNum bigNumcolor_6">#06</h2>
-              <div class="uiuxInfo_IntroTitle">
-                <ul class="useTool">
-                  <li><img src="img/useTool_ps.png" alt=""></li>
-                  <li><img src="img/useTool_ai.png" alt=""></li>
-                </ul>
-                <h3>UI/UX Design</h3>
-                <p class="uiuxWork_name">외교부 독도 메인페이지</p>
-                <P class="uiuxWork_date">작업기간: 1d</P>
-                <p class="uiuxWork_serve">작업기여도: 100% 개인작업!</p>
-                <p class="imgCopyright">이미지 출처: 외교부 독도, PIXABAY</p>
-                <p class="noCommen">본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</p>
-              </div>
-              <div class="neon_arrowAll">
-                <span class="material-symbols-outlined neonArrow">keyboard_double_arrow_down</span>
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content6_1">
-              <h2 class="DesignConcept">Design Concept</h2>
-              <ul class="hashTag hashTagColor_6">
-                <li>#붓 효과</li>
-                <li>#브러쉬</li>
-              </ul>
-              <div class="color_fontBox">
-                <div class="colorAll">
-                  <h4>color</h4>
-                  <ul class="colorList">
-                    <li>
-                      <div class="colorBox dokdoColor1"></div>
-                      <p>#CD313A</p>
-                    </li>
-                    <li>
-                      <div class="colorBox dokdoColor2"></div>
-                      <p>#003478</p>
-                    </li>
-                    <li>
-                      <div class="colorBox dokdoColor3"></div>
-                      <p>#FFFFFF</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="fontAll">
-                  <h4>font</h4>
-                  <ul class="fontList">
-                    <li>나눔고딕</li>
-                    <li>나눔손글씨 붓</li>
-                  </ul>
-                </div>
-              </div>
-              <p class="content1_p">
-                -독도-<br><br>
-                대한민국의 고유영토입니다.<br>
-                한국의 것, 가장 한국적인 느낌이 나는 디자인을 물색하다가 <br>
-                붓터치 효과를 이용한 디자인을 채용했습니다.
-              </p>  
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content6_2">
-              <div class=uiuxInfo_content6_2_left>
-                <img src="img/brush.png" alt="">
-              </div>
-              <div class="uiuxInfo_content6_2_right">
-                <h2 class="emphasizeTitle">붓 효과</h2>
-                <p>
-                  Photoshop에서 마음에 드는 붓 효과를 내는 무료 브러쉬를 사용했습니다. <br>
-                  단지 브러쉬 만으로도 원하는 디자인을 구상할 수 있었습니다.
-                </p>
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content6_3">
-              <div class="uiuxInfo_content6_3_left">
-                <h2 class="emphasizeTitle">배경 제작</h2>
-                <p>
-                  독도 배경화면에도 붓과 어울리는 필터를 적용했습니다. <br>
-                  Dry Brush를 이용 하였으며, 완성된 배경은 붓 레이어와 Layer Mask 기능을 이용하여 마무리 했습니다. 
-                </p>
-              </div>
-              <div class="uiuxInfo_content6_3_right">
-                <img src="img/dokdo_eastsea.png" alt="">
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content6_4">
-              <h2 class="emphasizeTitle">완성</h2>
-              <img src="img/dokdoAll.png" alt="" class="dokdoAll">
-              <div class="noCommenBottomBar noCommenBottomBarcolor6">
-                <img src="img/logo.png" alt="" class="bottomlogo">
-                <h6>본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</h6>
-              </div> 
-            </div>  
-          </div>
-          <img src="img/dokdo.png" class="dokdoBack" alt="" >
-        </div>
-        <div class="uiuxPopUp uiuxPopUp1" id="uiuxPop7">
-          <div class="uiuxPopUpIn">
-            <div class="uiuxInfoBox uiuxInfo_Intro">
-              <h2 class="bigNum bigNumcolor_7">#07</h2>
-              <div class="uiuxInfo_IntroTitle">
-                <ul class="useTool">
-                  <li><img src="img/useTool_ps.png" alt=""></li>
-                  <li><img src="img/useTool_ai.png" alt=""></li>
-                </ul>
-                <h3>UI/UX Design</h3>
-                <p class="uiuxWork_name">유니세프 메인페이지</p>
-                <P class="uiuxWork_date">작업기간: 1d</P>
-                <p class="uiuxWork_serve">작업기여도: 100% 개인작업!</p>
-                <p class="imgCopyright">이미지 출처: 유니세프</p>
-                <p class="noCommen">본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</p>
-              </div>
-              <div class="neon_arrowAll">
-                <span class="material-symbols-outlined neonArrow">keyboard_double_arrow_down</span>
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content7_1">
-              <h2 class="DesignConcept">Design Concept</h2>
-              <ul class="hashTag hashTagColor_7">
-                <li>#색상</li>
-                <li>#리본</li>
-                <li>#입체</li>
-              </ul>
-              <div class="color_fontBox">
-                <div class="colorAll">
-                  <h4>color</h4>
-                  <ul class="colorList">
-                    <li>
-                      <div class="colorBox unicefColor1"></div>
-                      <p>#1393CB</p>
-                    </li>
-                    <li>
-                      <div class="colorBox unicefColor2"></div>
-                      <p>#F9FF01</p>
-                    </li>
-                    <li>
-                      <div class="colorBox unicefColor3"></div>
-                      <p>#FFFFFF</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="fontAll">
-                  <h4>font</h4>
-                  <ul class="fontList">
-                    <li>나눔고딕</li>
-                  </ul>
-                </div>
-              </div>
-              <p class="content1_p">
-                -유니세프-<br><br>
-                이번 디자인에는 유니세프에 걸맞다고 생각하는 리본을 콘셉트로 했습니다.<br>
-                리본은 기본적으로 좋은 의미를 많이 가지고 있습니다. 유니세프의 메인 색상과 어울리는<br>
-                노란색상의 리본을 사용했습니다.
-              </p>  
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content7_2">
-              <div class="uiuxInfo_content7_2_left">
-                <img src="img/3dBox.png" alt="">
-              </div>
-              <div class="uiuxInfo_content7_2_right">
-                <h2 class="emphasizeTitle">리본과 입체도형</h2>
-                <p>
-                  리본은 여러 좋은 의미를 가지고 있습니다. 평화를 상징하기도 하죠.
-                  그래서 이번 디자인에서 리본이 걸맞는 콘셉트라고 생각했습니다. <br>
-                  그리고 Photoshop의 Actions의 기능을 이용하여 입체 표현을 하였습니다.
-                </p>
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content7_3">
-              <h2 class="emphasizeTitle">완성</h2>
-              <img src="img/unicefAll.png" alt="">
-              <div class="noCommenBottomBar noCommenBottomBarcolor7">
-                <img src="img/logo.png" alt="" class="bottomlogo">
-                <h6>본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</h6>
-              </div> 
-            </div>
-          </div>
-          <img src="img/unicefBack.png" class="unicefBack" alt="">
-        </div>
-        <div class="uiuxPopUp uiuxPopUp1" id="uiuxPop8">
-          <div class="uiuxPopUpIn">
-            <div class="uiuxInfoBox uiuxInfo_Intro">
-              <h2 class="bigNum bigNumcolor_7">#08</h2>
-              <div class="uiuxInfo_IntroTitle">
-                <ul class="useTool">
-                  <li><img src="img/useTool_ps.png" alt=""></li>
-                  <li><img src="img/useTool_ai.png" alt=""></li>
-                </ul>
-                <h3>UI/UX Design</h3>
-                <p class="uiuxWork_name">빌보드 메인페이지</p>
-                <P class="uiuxWork_date">작업기간: 1d</P>
-                <p class="uiuxWork_serve">작업기여도: 100% 개인작업!</p>
-                <p class="imgCopyright">이미지 출처: 빌보드</p>
-                <p class="noCommen">본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</p>
-              </div>
-              <div class="neon_arrowAll">
-                <span class="material-symbols-outlined neonArrow">keyboard_double_arrow_down</span>
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content8_1">
-              <h2 class="DesignConcept">Design Concept</h2>
-              <ul class="hashTag hashTagColor_8">
-                <li>#블렌더</li>
-                <li>#선</li>
-                <li>#사실주의</li>
-              </ul>
-              <div class="color_fontBox">
-                <div class="colorAll">
-                  <h4>color</h4>
-                  <ul class="colorList">
-                    <li>
-                      <div class="colorBox billboardColor1"></div>
-                      <p>#1393CB</p>
-                    </li>
-                    <li>
-                      <div class="colorBox billboardColor2"></div>
-                      <p>#F9FF01</p>
-                    </li>
-                    <li>
-                      <div class="colorBox billboardColor3"></div>
-                      <p>#000000</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="fontAll">
-                  <h4>font</h4>
-                  <ul class="fontList">
-                    <li>나눔고딕</li>
-                  </ul>
-                </div>
-              </div>
-              <p class="content1_p">
-                -Billboard-<br><br>
-                소개해드리는 UI/UX 디자인 작업물의 마지막입니다.<br>
-                Illustrator에서의 블렌드 작업과 Photoshop에서의 세밀한 디테일 작업이 어우러진 작품입니다.<br>
-              </p>  
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content8_2">
-              <div class=uiuxInfo_content8_2_left>
-                <img src="img/blend.png" alt="">
-              </div>
-              <div class="uiuxInfo_content8_2_right">
-                <h2 class="emphasizeTitle">선, 블렌드</h2>
-                <p>
-                  Illustrator에서는 Blend 기능을 사용하면 여러가지 형태의 디자인을 빠르게 제작할 수 있습니다. Photoshop에서는 약간의 발광효과를 주어 마무리 합니다.
-                </p>
-              </div>
-            </div>
-            <div class="uiuxInfoBox uiuxInfo_content8_3">
-              <h2 class="emphasizeTitle">완성</h2>
-              <p>
-                전체적으로 미니멀한 디자인을 적용했습니다. <br>
-                배경의 선이 돋보여야 하기에 배경을 제외한 나머지에는 선을 넣지 않았습니다.
-              </p>
-              <img src="img/blendAll.png" alt="">
-              <div class="noCommenBottomBar noCommenBottomBarcolor8">
-                <img src="img/logo.png" alt="" class="bottomlogo">
-                <h6>본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</h6>
-              </div> 
-            </div>
-          </div>
-          <img src="img/billboardBack.png" alt="" class="billboardBack">
-        </div>
-        <div class="twoDPopUp twoDPopUp1" id="twoD_1">
-          <h2 class="TwoDGraphicDesisgn">2D Graphic Desisgn</h2>
-          <img src="img/Web_D_11(Logos).png" alt="" class="mainMockUp">
-          <div class="twoDPopUp_in">
-            <div class="twoDPopUp_inner">
-              <div class=twoDPopUp_inner_part_1>
-                <h2 class="twod_work_name">개인 로고 디자인</h2>
-                <div class="twod_work_info">
-                  <p>제작기간: 2d</p>
-                  <p>작업기여도: 개인작업 100%</p>
-                  <p>이미지 출처: 개인제작</p>
-                </div>
-              </div>
-              <div class=twoDPopUp_inner_part_2>
-                <p>
-                  이지훈이 누구인가? <br>
-                  저 이지훈을 나타내는 개인 로고를 소개합니다!
-                </p>
-                <div class="neon_arrowAll">
-                  <span class="material-symbols-outlined neonArrow neonArrow_2D">keyboard_double_arrow_down</span>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_3">
-                <div class="twoDPopUp_inner_part_3_left">
-                  <div class="artH2">
-                    <h2>Design Concept</h2>
+                  <!-- 좌우버튼, 페이지 표시 -->
+                  <div class="btn_close">
+                    <i class="material-symbols-outlined">close</i>
                   </div>
-                  <p class="pixP">
-                    어디에나 어울리는 범용성이 좋은 로고입니다.<br>
-                    저의 이니셜 LJH와 대표적인 성격 두 가지를 로고에 그려냈습니다. <br>
-                    단순하지만 속은 무거운 그런 로고입니다!
-                  </p>
-                </div>
-                <div class=twoDPopUp_inner_part_3_right>
-                  <img src="img/neon_logo.png" alt="">
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_4">
-                <div class="twodColor">
-                  <div class="artH2">
-                    <h2>Color</h2>
+                  <div class="g_page">
+                    <span>1</span> / <span>8</span>
                   </div>
-                  <ul class="twodColorList">
-                    <li>
-                      <p>색상 자유</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="twodFont">
-                  <div class="artH2">
-                    <h2>Font</h2>
-                  </div>
-                  <ul class="twodFontList">
-                    <li>
-                      Noto Sans
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_5">
-                <div class="artH2">
-                  <h2>Process</h2>
-                </div>
-                <ul class="processAll">
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_logo_01.png" alt="">
-                    </div>
-                    <p>
-                      원 두 개를 겹쳐 놓은 것으로 시작합니다. <br>
-                      두 개의 원은 결속력을 상징합니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_logo_02.png" alt="">
-                    </div>
-                    <p>
-                      PathFinder 기능을 사용하여 깎아내듯 작업했습니다.<br>
-                      제 이름의 이니셜 LJH와 아이디어를 상징하는 느낌표, 친절을 상징하는
-                      웃는 모습이 그려져있습니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_logo_03.png" alt="">
-                    </div>
-                    <p>
-                      완성된 로고는 자유로운 색상 변경으로 어디에나 사용 가능합니다.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="twoDPopUp_inner_part_6">
-                <div class="artH2">
-                  <h2>Mock Up</h2>
-                </div>
-                <img src="img/Web_D_06(LogoHud).png" alt="">
-                <img src="img/Web_D_11(Logos).png" alt="">
-              </div>
-              <div class="twoDPopUp_inner_part_7">
-                <div class="noCommenBottomBar_2D">
-                  <img src="img/logo.png" alt="">
-                  <p>본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</p>
-                  <p>목업출처: free-PSD-templates</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="twoDPopUp twoDPopUp1" id="twoD_2">
-          <h2 class="TwoDGraphicDesisgn">2D Graphic Desisgn</h2>
-          <img src="img/2D_mainMockup_02.png" alt="" class="mainMockUp">
-          <div class="twoDPopUp_in">
-            <div class="twoDPopUp_inner">
-              <div class=twoDPopUp_inner_part_1>
-                <h2 class="twod_work_name">몽환의 성</h2>
-                <div class="twod_work_info">
-                  <p>제작기간: 1d</p>
-                  <p>작업기여도: 개인작업 100%</p>
-                  <p>이미지 출처: 개인제작</p>
-                </div>
-              </div>
-              <div class=twoDPopUp_inner_part_2>
-                <p>
-                  몽환적인 두 개의 성 <br>
-                  몽환적인 분위기에 우주는 정말 잘 어울립니다!
-                </p>
-                <div class="neon_arrowAll">
-                  <span class="material-symbols-outlined neonArrow neonArrow_2D">keyboard_double_arrow_down</span>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_3">
-                <div class=twoDPopUp_inner_part_3_left>
-                  <div class="artH2">
-                    <h2>Design Concept</h2>
-                  </div>
-                  <p class="pixP">
-                    몽환적인 느낌이 나는 성입니다. <br>
-                    평소 우주에 관심이 많은지라 초기 계획부터 우주를 테마로 한 작품을 구상했습니다.
-                    <br><br>
-                    각각 두 개의 성이 달에 지어져 있고 성들을 이어주는 계단을 놓았습니다. <br>
-                    계단의 아이디어는 견우와 직녀를 만나게 해주는 오작교에서 가져왔습니다.
-                  </p>
-                </div>
-                <div class="twoDPopUp_inner_part_3_right">
-                  <img src="img/2D_Ori_02.jpg" alt="" class="oriPic">
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_4">
-                <div class="twodColor">
-                  <div class="artH2">
-                    <h2>Color</h2>
-                  </div>
-                  <ul class="twodColorList">
-                    <li>
-                      <div class="twodColorBox color2-1"></div>
-                      <p>#5caede</p>
-                    </li>
-                    <li>
-                      <div class="twodColorBox color2-2"></div>
-                      <p>#b972f6</p>
-                    </li>
-                    <li>
-                      <div class="twodColorBox color2-3"></div>
-                      <p>#000000</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="twodFont">
-                  <div class="artH2">
-                    <h2>Font</h2>
-                  </div>
-                  <ul class="twodFontList">
-                    <li>
-                      미상
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_5">
-                <div class="artH2">
-                  <h2>Process</h2>
-                </div>
-                <ul class="processAll">
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_02_01.png" alt="">
-                    </div>
-                    <p>
-                      노이즈 효과를 사용하여 별과 비슷한 느낌을 줍니다. <br>
-                      빨강 파랑 초록으로 하여 흩날리는 역동적인 느낌을 주었습니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_02_02.png" alt="">
-                    </div>
-                    <p>
-                      일러스트레이터로 제작한 성을 포토샵으로 옮겨와 제작합니다.
-                      약간의 Blur 효과로 더욱 빛나게 하여 성이 강조될 수 있게 합니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_02_03.png" alt="">
-                    </div>
-                    <p>
-                      마지막으로 Brush 툴의 Opacity를 조절하여 성운을 만들어 몽환적인 느낌을 극대화하여 마무리합니다.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="twoDPopUp_inner_part_6">
-                <div class="artH2">
-                  <h2>Mock Up</h2>
-                </div>
-                <img src="img/Web_D_03(Cacle).png" alt="">
-              </div>
-              <div class="twoDPopUp_inner_part_7">
-                <div class="noCommenBottomBar_2D">
-                  <img src="img/logo.png" alt="">
-                  <p>본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</p>
-                  <p>목업출처: free-PSD-templates</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="twoDPopUp twoDPopUp1" id="twoD_3">
-          <h2 class="TwoDGraphicDesisgn">2D Graphic Desisgn</h2>
-          <img src="img/2D_mainMockup_03.png" alt="" class="mainMockUp">
-          <div class="twoDPopUp_in">
-            <div class="twoDPopUp_inner">
-              <div class=twoDPopUp_inner_part_1>
-                <h2 class="twod_work_name">캐릭터 드로잉</h2>
-                <div class="twod_work_info">
-                  <p>제작기간: 2d</p>
-                  <p>작업기여도: 개인작업 100%</p>
-                  <p>이미지 출처: 개인제작</p>
-                </div>
-              </div>
-              <div class=twoDPopUp_inner_part_2>
-                <p>
-                  국민게임 카트라이더로 캐릭터 드로잉을 진행했습니다.
-                </p>
-                <div class="neon_arrowAll">
-                  <span class="material-symbols-outlined neonArrow neonArrow_2D">keyboard_double_arrow_down</span>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_3">
-                <div class=twoDPopUp_inner_part_3_left>
-                  <div class="artH2">
-                    <h2>Design Concept</h2>
-                  </div>
-                  <p class="pixP">
-                    캐릭터 디자인에서 카트라이더의 메인 캐릭터 '다오'를 선택했습니다. <br>
-                    동시에 카트라이더의 대표 카트인 '연습카트'를 3D 느낌으로 스케치 했습니다.
-                  </p>
-                </div>
-                <div class="twoDPopUp_inner_part_3_right">
-                  <img src="img/2D_ori_03.jpg" alt="" class="oriPic">
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_4">
-                <div class="twodColor">
-                  <div class="artH2">
-                    <h2>Color</h2>
-                  </div>
-                  <ul class="twodColorList">
-                    <li>
-                      <div class="twodColorBox color2-1"></div>
-                      <p>#e82706</p>
-                    </li>
-                    <li>
-                      <div class="twodColorBox color2-2"></div>
-                      <p>#2b6dff</p>
-                    </li>
-                    <li>
-                      <div class="twodColorBox color2-3"></div>
-                      <p>#5baddf</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="twodFont">
-                  <div class="artH2">
-                    <h2>Font</h2>
-                  </div>
-                  <ul class="twodFontList">
-                    <li>
-                      미상
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_5">
-                <div class="artH2">
-                  <h2>Process</h2>
-                </div>
-                <ul class="processAll">
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_03_01.png" alt="">
-                    </div>
-                    <p>
-                      원본 다오를 참고한 후 펜툴을 사용하여 세밀한 드로잉을 진행했습니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_03_02.png" alt="">
-                    </div>
-                    <p>
-                      입체적인 느낌이 날 수 있도록 카트를 각 파트별로 나누어 그린 후 색상 차이를 두어 명암 표현을 하였습니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_03_03.png" alt="">
-                    </div>
-                    <p>
-                      콘셉트에 맞는 배경을 제작한 후 완성된 각 레이어를 재배치하여 마무리 합니다.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="twoDPopUp_inner_part_6">
-                <div class="artH2">
-                  <h2>Mock Up</h2>
-                </div>
-                <img src="img/Web_D_03(kart).png" alt="">
-              </div>
-              <div class="twoDPopUp_inner_part_7">
-                <div class="noCommenBottomBar_2D">
-                  <img src="img/logo.png" alt="">
-                  <p>본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</p>
-                  <p>목업출처: free-PSD-templates</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="twoDPopUp twoDPopUp1" id="twoD_4">
-          <h2 class="TwoDGraphicDesisgn">2D Graphic Desisgn</h2>
-          <img src="img/2D_mainMockup_04.png" alt="" class="mainMockUp">
-          <div class="twoDPopUp_in">
-            <div class="twoDPopUp_inner">
-              <div class=twoDPopUp_inner_part_1>
-                <h2 class="twod_work_name">인물 실사 드로잉</h2>
-                <div class="twod_work_info">
-                  <p>제작기간: 2d</p>
-                  <p>작업기여도: 개인작업 100%</p>
-                  <p>이미지 출처: 개인제작</p>
-                </div>
-              </div>
-              <div class=twoDPopUp_inner_part_2>
-                <p>
-                  인기 아이돌 그룹 'ITZY'의 유나를 모델로 한 실사 드로잉 작품입니다.
-                </p>
-                <div class="neon_arrowAll">
-                  <span class="material-symbols-outlined neonArrow neonArrow_2D">keyboard_double_arrow_down</span>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_3">
-                <div class=twoDPopUp_inner_part_3_left>
-                  <div class="artH2">
-                    <h2>Design Concept</h2>
-                  </div>
-                  <p class="pixP">
-                    최대한 실사 느낌을 낼 수 있는 방식으로 폴리곤아트 방식을 채택했습니다.<br>
-                    눈과 손처럼 세밀한 표현이 필요한 곳은 폴리곤 크기를 작게하여 실사 느낌을 극대화 하였습니다.
-                  </p>
-                </div>
-                <div class="twoDPopUp_inner_part_3_right">
-                  <img src="img/2D_Ori_04.png" alt="" class="oriPic">
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_4">
-                <div class="twodColor">
-                  <div class="artH2">
-                    <h2>Color</h2>
-                  </div>
-                  <ul class="twodColorList">
-                    <li>
-                      <p>없음</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="twodFont">
-                  <div class="artH2">
-                    <h2>Font</h2>
-                  </div>
-                  <ul class="twodFontList">
-                    <li>
-                      없음
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_5">
-                <div class="artH2">
-                  <h2>Process</h2>
-                </div>
-                <ul class="processAll">
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_04_01.png" alt="">
-                    </div>
-                    <p>
-                      참고할 원본 이미지를 Template합니다
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_04_02.png" alt="">
-                    </div>
-                    <p>
-                      펜툴로 폴리곤을 무작위 크기로 그려 낸 후 스포이드를 사용하여 원본 이미지의 색상을 입힙니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_04_03.png" alt="">
-                    </div>
-                    <p>
-                      눈이나 손처럼 섬세한 표현이 필요한 곳은 폴리곤의 크기를 줄여줍니다.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="twoDPopUp_inner_part_6">
-                <div class="artH2">
-                  <h2>Mock Up</h2>
-                </div>
-                <img src="img/Web_D_13(YUNAs).png" alt="">
-              </div>
-              <div class="twoDPopUp_inner_part_7">
-                <div class="noCommenBottomBar_2D">
-                  <img src="img/logo.png" alt="">
-                  <p>본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</p>
-                  <p>목업출처: free-PSD-templates</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="twoDPopUp twoDPopUp1" id="twoD_5">
-          <h2 class="TwoDGraphicDesisgn">2D Graphic Desisgn</h2>
-          <img src="img/2D_mainMockup_05.png" alt="" class="mainMockUp">
-          <div class="twoDPopUp_in">
-            <div class="twoDPopUp_inner">
-              <div class=twoDPopUp_inner_part_1>
-                <h2 class="twod_work_name">구인 배너 디자인</h2>
-                <div class="twod_work_info">
-                  <p>제작기간: 1d</p>
-                  <p>작업기여도: 개인작업 100%</p>
-                  <p>이미지 출처: 개인제작</p>
-                </div>
-              </div>
-              <div class=twoDPopUp_inner_part_2>
-                <p>
-                  가상 디자인 회사 ARTSHOP의 구인 배너 디자인입니다.
-                </p>
-                <div class="neon_arrowAll">
-                  <span class="material-symbols-outlined neonArrow neonArrow_2D">keyboard_double_arrow_down</span>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_3">
-                <div class=twoDPopUp_inner_part_3_left>
-                  <div class="artH2">
-                    <h2>Design Concept</h2>
-                  </div>
-                  <p class="pixP">
-                    디자인 회사의 채용공고 답게 최대한 깔끔한 느낌을 주고자 했습니다. <br>
-                    실사 느낌이 나는 '구'가 메인 디자인이며 채용공고에서 가장 중요한 것이 <br>
-                    가독성이라고 생각하여 텍스트 크기에 신경을 썼습니다.
-                  </p>
-                </div>
-                <div class="twoDPopUp_inner_part_3_right">
-                  <img src="img/2D_Ori_05.png" alt="" class="oriPicS">
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_4">
-                <div class="twodColor">
-                  <div class="artH2">
-                    <h2>Color</h2>
-                  </div>
-                  <ul class="twodColorList">
-                    <li>
-                      <div class="twodColorBox color5-1"></div>
-                      <p>#0c4fc2</p>
-                    </li>
-                    <li>
-                      <div class="twodColorBox color5-2"></div>
-                      <p>#b14297</p>
-                    </li>
-                    <li>
-                      <div class="twodColorBox color5-3"></div>
-                      <p>#000000</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="twodFont">
-                  <div class="artH2">
-                    <h2>Font</h2>
-                  </div>
-                  <ul class="twodFontList">
-                    <li>
-                      Noto Sans KR
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_5">
-                <div class="artH2">
-                  <h2>Process</h2>
-                </div>
-                <ul class="processAll">
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_05_01.png" alt="">
-                    </div>
-                    <p>
-                      입체적인 느낌이 나는 구를 제작합니다. <br>
-                      브러쉬로 텍스트가 올 자리를 미리 정해둡니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_05_02.png" alt="">
-                    </div>
-                    <p>
-                      Noto Sans KR 폰트를 사용하여 가독성이 좋은 텍스트를 만듭니다.
-                      강조할 텍스트는 강조 해줍니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_05_03.PNG" alt="">
-                    </div>
-                    <p>
-                      Opacity가 조절된 브러쉬를 사용하여 은은하게 퍼지는 효과를 주어 마무리합니다.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="twoDPopUp_inner_part_6">
-                <div class="artH2">
-                  <h2>Mock Up</h2>
-                </div>
-                <img src="img/Web_D_02(Job).png" alt="" class="jobp">
-              </div>
-              <div class="twoDPopUp_inner_part_7">
-                <div class="noCommenBottomBar_2D">
-                  <img src="img/logo.png" alt="">
-                  <p>본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</p>
-                  <p>목업출처: free-PSD-templates</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="twoDPopUp twoDPopUp1" id="twoD_6">
-          <h2 class="TwoDGraphicDesisgn">2D Graphic Desisgn</h2>
-          <img src="img/2D_mainMockup_06.png" alt="" class="mainMockUp">
-          <div class="twoDPopUp_in">
-            <div class="twoDPopUp_inner">
-              <div class=twoDPopUp_inner_part_1>
-                <h2 class="twod_work_name">이벤트 배너 디자인</h2>
-                <div class="twod_work_info">
-                  <p>제작기간: 1d</p>
-                  <p>작업기여도: 개인작업 100%</p>
-                  <p>이미지 출처: 개인제작</p>
-                </div>
-              </div>
-              <div class=twoDPopUp_inner_part_2>
-                <p>
-                  일정금액 이상 구매 시 스타벅스 커피를 증정하는 이벤트 배너입니다.
-                </p>
-                <div class="neon_arrowAll">
-                  <span class="material-symbols-outlined neonArrow neonArrow_2D">keyboard_double_arrow_down</span>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_3">
-                <div class=twoDPopUp_inner_part_3_left>
-                  <div class="artH2">
-                    <h2>Design Concept</h2>
-                  </div>
-                  <p class="pixP">
-                    이벤트 증정 상품을 돋보이게 하여 이벤트 증정상품이 무엇인지 한 눈에 파악할 수 있게 했습니다. <br>
-                    중간에 사선으로 파트를 나누어 깔끔한 느낌을 더했습니다.
-                  </p>
-                </div>
-                <div class="twoDPopUp_inner_part_3_right">
-                  <img src="img/2D_Ori_06.png" alt="" class="oriPicS">
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_4">
-                <div class="twodColor">
-                  <div class="artH2">
-                    <h2>Color</h2>
-                  </div>
-                  <ul class="twodColorList">
-                    <li>
-                      <div class="twodColorBox color6-1"></div>
-                      <p>#264f09</p>
-                    </li>
-                    <li>
-                      <div class="twodColorBox color6-2"></div>
-                      <p>#f19f00</p>
-                    </li>
-                    <li>
-                      <div class="twodColorBox color6-3"></div>
-                      <p>#c8c8c8</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="twodFont">
-                  <div class="artH2">
-                    <h2>Font</h2>
-                  </div>
-                  <ul class="twodFontList">
-                    <li>
-                      G마켓 산스 TTF
-                    </li>
-                    <li>
-                      MD 아롱체
-                    </li>
-                    <li>
-                      나눔손글씨 붓
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_5">
-                <div class="artH2">
-                  <h2>Process</h2>
-                </div>
-                <ul class="processAll">
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_06_01.PNG" alt="">
-                    </div>
-                    <p>
-                      이벤트 상품에 그림자 효과를 넣어 현실감을 더합니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_06_02.PNG" alt="">
-                    </div>
-                    <p>
-                      하단 이벤트 참고사항의 중요한 점은 강조하여 가독성을 향상시켰습니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_06_03.PNG" alt="">
-                    </div>
-                    <p>
-                      빨대는 무료이미지를 사용하였으며, Layer Mask 기능을 이용하여 자연스럽게 합성하여
-                      마무리 하였습니다.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="twoDPopUp_inner_part_6">
-                <div class="artH2">
-                  <h2>Mock Up</h2>
-                </div>
-                <img src="img/Web_D_07(starbucks).png" alt="">
-              </div>
-              <div class="twoDPopUp_inner_part_7">
-                <div class="noCommenBottomBar_2D">
-                  <img src="img/logo.png" alt="">
-                  <p>본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</p>
-                  <p>목업출처: free-PSD-templates</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="twoDPopUp twoDPopUp1" id="twoD_7">
-          <h2 class="TwoDGraphicDesisgn">2D Graphic Desisgn</h2>
-          <img src="img/2D_mainMockup_07.png" alt="" class="mainMockUp">
-          <div class="twoDPopUp_in">
-            <div class="twoDPopUp_inner">
-              <div class=twoDPopUp_inner_part_1>
-                <h2 class="twod_work_name">제주항공 배너 디자인</h2>
-                <div class="twod_work_info">
-                  <p>제작기간: 1d</p>
-                  <p>작업기여도: 개인작업 100%</p>
-                  <p>이미지 출처: 개인제작</p>
-                </div>
-              </div>
-              <div class=twoDPopUp_inner_part_2>
-                <p>
-                  제주항공의 항공권 특가 배너 디자인입니다.
-                </p>
-                <div class="neon_arrowAll">
-                  <span class="material-symbols-outlined neonArrow neonArrow_2D">keyboard_double_arrow_down</span>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_3">
-                <div class=twoDPopUp_inner_part_3_left>
-                  <div class="artH2">
-                    <h2>Design Concept</h2>
-                  </div>
-                  <p class="pixP">
-                    제주항공의 날개 사진과 제주항공의 감귤색을 사용했습니다. <br>
-                    티켓 디자인은 세련된 느낌을 주기 위하여 글래스모피즘 디자인을 채택했습니다.
-                  </p>
-                </div>
-                <div class="twoDPopUp_inner_part_3_right">
-                  <img src="img/2D_Ori_07.png" alt="" class="oriPicS">
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_4">
-                <div class="twodColor">
-                  <div class="artH2">
-                    <h2>Color</h2>
-                  </div>
-                  <ul class="twodColorList">
-                    <li>
-                      <div class="twodColorBox color7-1"></div>
-                      <p>#ff7900</p>
-                    </li>
-                    <li>
-                      <div class="twodColorBox color7-2"></div>
-                      <p>#ffffff</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="twodFont">
-                  <div class="artH2">
-                    <h2>Font</h2>
-                  </div>
-                  <ul class="twodFontList">
-                    <li>
-                      Noto Sans KR
-                    </li>
-                    <li>
-                      굴림
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_5">
-                <div class="artH2">
-                  <h2>Process</h2>
-                </div>
-                <ul class="processAll">
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_07_01.PNG" alt="">
-                    </div>
-                    <p>
-                      배경으로 사용할 이미지의 색상을 보정해줍니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_07_02.PNG" alt="">
-                    </div>
-                    <p>
-                      텍스트를 일반 레이어로 변경 후 좌·상 방향으로 복사하여 입체적인 느낌을 주었습니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_07_03.PNG" alt="">
-                    </div>
-                    <p>
-                      빨대는 무료이미지를 사용하였으며, Layer Mask 기능을 이용하여 자연스럽게 합성하여
-                      마무리 하였습니다.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="twoDPopUp_inner_part_6">
-                <div class="artH2">
-                  <h2>Mock Up</h2>
-                </div>
-                <img src="img/Web_D_08(JejuAir).png" alt="">
-              </div>
-              <div class="twoDPopUp_inner_part_7">
-                <div class="noCommenBottomBar_2D">
-                  <img src="img/logo.png" alt="">
-                  <p>본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</p>
-                  <p>목업출처: free-PSD-templates</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="twoDPopUp twoDPopUp1" id="twoD_8">
-          <h2 class="TwoDGraphicDesisgn">2D Graphic Desisgn</h2>
-          <img src="img/2D_mainMockup_08.png" alt="" class="mainMockUp">
-          <div class="twoDPopUp_in">
-            <div class="twoDPopUp_inner">
-              <div class=twoDPopUp_inner_part_1>
-                <h2 class="twod_work_name">레이어 마스크 응용</h2>
-                <div class="twod_work_info">
-                  <p>제작기간: 1d</p>
-                  <p>작업기여도: 개인작업 100%</p>
-                  <p>이미지 출처: 개인제작</p>
-                </div>
-              </div>
-              <div class=twoDPopUp_inner_part_2>
-                <p>
-                  레이어마스크를 응용한 작품입니다.
-                </p>
-                <div class="neon_arrowAll">
-                  <span class="material-symbols-outlined neonArrow neonArrow_2D">keyboard_double_arrow_down</span>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_3">
-                <div class=twoDPopUp_inner_part_3_left>
-                  <div class="artH2">
-                    <h2>Design Concept</h2>
-                  </div>
-                  <p class="pixP">
-                    입체적인 느낌이 나는 텍스트에 특이 무늬를 가진 브러쉬를 사용하여 완성시켰습니다. <br>
-                    어두운 곳에서 은은하게 빛나는 느낌이 특징입니다.
-                  </p>
-                </div>
-                <div class="twoDPopUp_inner_part_3_right">
-                  <img src="img/2D_Ori_08.png" alt="" class="oriPicS">
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_4">
-                <div class="twodColor">
-                  <div class="artH2">
-                    <h2>Color</h2>
-                  </div>
-                  <ul class="twodColorList">
-                    <li>
-                      <div class="twodColorBox color8-1"></div>
-                      <p>#41bd29</p>
-                    </li>
-                    <li>
-                      <div class="twodColorBox color8-2"></div>
-                      <p>#fcfa24</p>
-                    </li>
-                    <li>
-                      <div class="twodColorBox color8-3"></div>
-                      <p>#ee6cb6</p>
-                    </li>
-                    <li>
-                      <div class="twodColorBox color8-4"></div>
-                      <p>#3682fe</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="twodFont">
-                  <div class="artH2">
-                    <h2>Font</h2>
-                  </div>
-                  <ul class="twodFontList">
-                    <li>
-                      Noto Sans KR
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_5">
-                <div class="artH2">
-                  <h2>Process</h2>
-                </div>
-                <ul class="processAll">
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_08_01.PNG" alt="">
-                    </div>
-                    <p>
-                      텍스트를 일반 레이어로 변경 후 한쪽 방향으로 계속 복사하여 입체 텍스트를 만들고
-                      Layer Mask를 사용하여 브러쉬 무늬를 넣습니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_08_02.PNG" alt="">
-                    </div>
-                    <p>
-                      상위 레이어에 Opacity를 조절한 브러쉬로 광원효과를 줍니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_08_03.PNG" alt="">
-                    </div>
-                    <p>
-                      Layer Style에서 Outer Glow를 사용하여 광원 디테일 작업을 하여 마무리합니다.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="twoDPopUp_inner_part_6">
-                <div class="artH2">
-                  <h2>Mock Up</h2>
-                </div>
-                <img src="img/Web_D_10(LovCard).png" alt="">
-              </div>
-              <div class="twoDPopUp_inner_part_7">
-                <div class="noCommenBottomBar_2D">
-                  <img src="img/logo.png" alt="">
-                  <p>본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</p>
-                  <p>목업출처: free-PSD-templates</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="twoDPopUp twoDPopUp1" id="twoD_9">
-          <h2 class="TwoDGraphicDesisgn">2D Graphic Desisgn</h2>
-          <img src="img/2D_mainMockup_09.png" alt="" class="mainMockUp">
-          <div class="twoDPopUp_in">
-            <div class="twoDPopUp_inner">
-              <div class=twoDPopUp_inner_part_1>
-                <h2 class="twod_work_name">THE GLENLIVET</h2>
-                <div class="twod_work_info">
-                  <p>제작기간: 1d</p>
-                  <p>작업기여도: 개인작업 100%</p>
-                  <p>이미지 출처: 개인제작</p>
-                </div>
-              </div>
-              <div class=twoDPopUp_inner_part_2>
-                <p>
-                  포토샵의 Filter Gallary를 응용하여 만든 THE GLENLIVET광고 배너입니다.
-                </p>
-                <div class="neon_arrowAll">
-                  <span class="material-symbols-outlined neonArrow neonArrow_2D">keyboard_double_arrow_down</span>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_3">
-                <div class=twoDPopUp_inner_part_3_left>
-                  <div class="artH2">
-                    <h2>Design Concept</h2>
-                  </div>
-                  <p class="pixP">
-                    THE GLENLIVET은 위스키계의 정상에 서있습니다. <br>
-                    그렇기에 배너 또한 고급스러운 느낌이 필요하다고 생각했습니다. <br>
-                    어두운 도시 야경에서 빛나는 THE GLENLIVET의 광고를 디자인했습니다.
-                  </p>
-                </div>
-                <div class="twoDPopUp_inner_part_3_right">
-                  <img src="img/2D_Ori_09.png" alt="" class="oriPicS">
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_4">
-                <div class="twodColor">
-                  <div class="artH2">
-                    <h2>Color</h2>
-                  </div>
-                  <ul class="twodColorList">
-                    <li>
-                      <div class="twodColorBox color9-1"></div>
-                      <p>#3e1002</p>
-                    </li>
-                    <li>
-                      <div class="twodColorBox color9-2"></div>
-                      <p>#000000</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="twodFont">
-                  <div class="artH2">
-                    <h2>Font</h2>
-                  </div>
-                  <ul class="twodFontList">
-                    <li>
-                      나눔고딕
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_5">
-                <div class="artH2">
-                  <h2>Process</h2>
-                </div>
-                <ul class="processAll">
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_09_01.PNG" alt="">
-                    </div>
-                    <p>
-                      포토샵 Filter Gallary의 Texturizer를 사용하여 질감을 입힙니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_09_02.PNG" alt="">
-                    </div>
-                    <p>
-                      위스키 병을 복사하고 Opacity조절과 Layer Mask를 사용하여 반사된 모습을 연출합니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_09_03.png" alt="">
-                    </div>
-                    <p>
-                      세련된 느낌의 폰트를 넣어 마무리 합니다.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="twoDPopUp_inner_part_6">
-                <div class="artH2">
-                  <h2>Mock Up</h2>
-                </div>
-                <img src="img/glenlivetMockup.png" alt="">
-              </div>
-              <div class="twoDPopUp_inner_part_7">
-                <div class="noCommenBottomBar_2D">
-                  <img src="img/logo.png" alt="">
-                  <p>본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</p>
-                  <p>목업출처: free-PSD-templates</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="twoDPopUp twoDPopUp1" id="twoD_10">
-          <h2 class="TwoDGraphicDesisgn">2D Graphic Desisgn</h2>
-          <img src="img/2D_mainMockup_10.png" alt="" class="mainMockUp">
-          <div class="twoDPopUp_in">
-            <div class="twoDPopUp_inner">
-              <div class=twoDPopUp_inner_part_1>
-                <h2 class="twod_work_name">다이어리</h2>
-                <div class="twod_work_info">
-                  <p>제작기간: 2d</p>
-                  <p>작업기여도: 개인작업 100%</p>
-                  <p>이미지 출처: 개인제작</p>
-                </div>
-              </div>
-              <div class=twoDPopUp_inner_part_2>
-                <p>
-                  실제 경험한 이야기를 바탕으로 한 다이어리를 꾸며보았습니다.
-                </p>
-                <div class="neon_arrowAll">
-                  <span class="material-symbols-outlined neonArrow neonArrow_2D">keyboard_double_arrow_down</span>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_3">
-                <div class=twoDPopUp_inner_part_3_left>
-                  <div class="artH2">
-                    <h2>Design Concept</h2>
-                  </div>
-                  <p class="pixP">
-                    2022년 실제로 잠실 야구장에 방문 했을 때의 일을 다이어리 내용으로 썼습니다. <br>
-                    최대한 실사 느낌이 나도록 광원효과에 노력을 치중했습니다.
-                  </p>
-                </div>
-                <div class="twoDPopUp_inner_part_3_right">
-                  <img src="img/2D_Ori_10.png" alt="" class="oriPicD">
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_4">
-                <div class="twodColor">
-                  <div class="artH2">
-                    <h2>Color</h2>
-                  </div>
-                  <ul class="twodColorList">
-                    <li>
-                      <div class="twodColorBox color10-1"></div>
-                      <p>#131230</p>
-                    </li>
-                    <li>
-                      <div class="twodColorBox color10-2"></div>
-                      <p>#ED1C24</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="twodFont">
-                  <div class="artH2">
-                    <h2>Font</h2>
-                  </div>
-                  <ul class="twodFontList">
-                    <li>
-                      나눔고딕
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="twoDPopUp_inner_part_5">
-                <div class="artH2">
-                  <h2>Process</h2>
-                </div>
-                <ul class="processAll">
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_10_01.PNG" alt="">
-                    </div>
-                    <p>
-                      실제로 제가 가지고 있는 물건들을 촬영하여 불러왔습니다.
-                      주변과 어우러지게 각 물건들은 색상 보정이 이루어졌습니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_10_02.PNG" alt="">
-                    </div>
-                    <p>
-                      실제 촬여된 사진들을 Layer Mask 기능을 사용하여 폴라로이드 스타일로 꾸몄습니다.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="material-symbols-outlined twodArrow">arrow_forward_ios</span>
-                  </li>
-                  <li>
-                    <div class="processPic">
-                      <img src="img/Process_10_03.png" alt="">
-                    </div>
-                    <p>
-                      최대한 손글씨 느낌이 나는 폰트를 사용하여 다이어리를 제작했습니다.
-                      다이어리의 줄은 직접 Pattern 제작을 하였습니다.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="twoDPopUp_inner_part_6">
-                <div class="artH2">
-                  <h2>완성본</h2>
-                </div>
-                <img src="img/2D_Ori_10.png" alt="">
-              </div>
-              <div class="twoDPopUp_inner_part_7">
-                <div class="noCommenBottomBar_2D">
-                  <img src="img/logo.png" alt="">
-                  <p>본 작업물은 오로지 비상업적 포트폴리오로서만 사용됩니다.</p>
-                  <p>목업출처: free-PSD-templates</p>
-                </div>
+                </div>			
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="section" id="webPlan">
-      <div class="webPlanning_inner">
-        <div class="webPlanning_innerText">
-          <h2>Web planning</h2>
-          <p>UI/UX 디자인 기획과정을 다운로드 받아 보실 수 있습니다.</p>
-        </div>
-          <ul class="planDownloadList">
-            <li>
-              <div class="planDownloadListTitle">
-                <h3>멜론뮤직어워드2022 (MMA) 웹 기획</h3>
-                <p>작업자: 이지훈</p>
-              </div>
-              <div class="downloadBtns">
-                <a href="download/MMA_report.zip" download>스토리보드</a>
-                <a href="download/MMA_list.zip" download>산출목록표</a>
-                <a href="download/MMA_all.zip" download>전체 다운로드</a>
-              </div>
-            </li>
-            <li>
-              <div class="planDownloadListTitle">
-                <h3>에어서울 웹 기획</h3>
-                <p>작업자: 이지훈</p>
-              </div>
-              <div class="downloadBtns">
-                <a href="/download/airseoul_report.zip" download>트렌드적용보고서</a>
-                <a href="/download/airseoul_draft.zip" download>시안 및 와이어프레임</a>
-                <a href="/download/airseoul_all.zip" download>전체 다운로드</a>
-              </div>
-            </li>
-            <li>
-              <div class="planDownloadListTitle">
-                <h3>My portfolio 웹 기획</h3>
-                <p>작업자: 이지훈</p>
-              </div>
-              <div class="downloadBtns">
-                <a href="download/My_PortFolio_wirefame.zip" download>시나리오개발</a>
-                <a href="download/My_PortFolio_list.zip" download>산출목록표</a>
-                <a href="download/My_PortFolio_all.zip" download>전체 다운로드</a>
-              </div>
-            </li>
-          </ul>
-      </div>
-      <footer>
-      <p>&copy; LEEJIHOON 2023</p>
-      <P>Thankyou for visiting! :&#41;</P>
-      </footer>
-    </div>
-    <img src="img/backori.png" alt="" id="back">
+    </section>
+
+    <footer>
+
+    </footer>
   </div>
 
-  <div class="section">
-    <div class="slide"> Slide 1 </div>
-    <div class="slide"> Slide 2 </div>
-    <div class="slide"> Slide 3 </div>
-    <div class="slide"> Slide 4 </div>
-  </div>
-
-
+<!-- Script Source -->
+<!-- Swiper JS -->
+<script src="../js/swiper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="js/jquery-3.7.0.min.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
